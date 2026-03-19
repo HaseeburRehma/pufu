@@ -35,11 +35,10 @@ export function Layout() {
       <motion.header
         initial={{ y: -100 }}
         animate={{ y: 0 }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled ? 'bg-white/95 backdrop-blur-md shadow-sm' : 'bg-white/80 backdrop-blur-sm'
-        }`}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-sm' : 'bg-white/80 backdrop-blur-sm'
+          }`}
       >
-        <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-40">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-3">
@@ -57,17 +56,16 @@ export function Layout() {
                 <Link
                   key={link.path}
                   to={link.path}
-                  className={`text-sm tracking-wide transition-colors relative group font-medium ${
-                    location.pathname === link.path
-                      ? 'text-[#A89080]'
-                      : 'text-gray-500 hover:text-gray-900'
-                  }`}
+                  className={`text-sm tracking-wide transition-colors relative group font-medium ${location.pathname === link.path
+                    ? 'text-[#A89080]'
+                    : 'text-gray-500 hover:text-[#FCCEE8]'
+                    }`}
                 >
                   {link.name}
                   {location.pathname === link.path && (
                     <motion.div
                       layoutId="activeNav"
-                      className="absolute -bottom-1 left-0 right-0 h-0.5 bg-[#A89080]/30"
+                      className="absolute -bottom-1 left-0 right-0 h-0.5 bg-[#FCCEE8]/30"
                     />
                   )}
                 </Link>
@@ -98,11 +96,10 @@ export function Layout() {
                   <Link
                     key={link.path}
                     to={link.path}
-                    className={`block py-2 text-base ${
-                      location.pathname === link.path
-                        ? 'text-[#A89080] font-medium'
-                        : 'text-gray-600'
-                    }`}
+                    className={`block py-2 text-base ${location.pathname === link.path
+                      ? 'text-[#A89080] font-medium'
+                      : 'text-gray-600'
+                      }`}
                   >
                     {link.name}
                   </Link>
@@ -130,8 +127,8 @@ export function Layout() {
                 </span>
               </Link>
               <p className="text-gray-500 text-[14px] leading-relaxed max-w-sm mb-8">
-                PUFU – Japanische Soufflé-Pancakes & Premium Matcha in Köln. 
-                Ein elegantes Dessert-Café für feine Soufflé-Pancakes, 
+                PUFU – Japanische Soufflé-Pancakes & Premium Matcha in Köln.
+                Ein elegantes Dessert-Café für feine Soufflé-Pancakes,
                 hochwertige Matcha-Getränke und moderne Genussmomente.
               </p>
               <div className="flex items-center space-x-5">
