@@ -145,7 +145,7 @@ export function Layout() {
             {/* Column 2: Quick Links */}
             <div>
               <h4 className="text-[18px] font-semibold text-gray-900 mb-8" style={{ fontFamily: 'Inter, sans-serif' }}>
-                Quick Links
+                Unterseiten
               </h4>
               <ul className="space-y-4">
                 <li><Link to="/" className="text-gray-500 hover:text-gray-900 text-[15px] transition-colors">Startseite</Link></li>
@@ -158,7 +158,7 @@ export function Layout() {
             {/* Column 3: Visit Us */}
             <div>
               <h4 className="text-[18px] font-semibold text-gray-900 mb-8" style={{ fontFamily: 'Inter, sans-serif' }}>
-                Visit Us
+                Standorte
               </h4>
               <div className="text-[15px] text-gray-500 space-y-4">
                 <div>

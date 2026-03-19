@@ -396,8 +396,10 @@ export function Home() {
                 Matcha-Moment – bei PUFU erwartet dich ein Dessert-Erlebnis, das Geschmack und
                 Ästhetik vereint.
               </p>
-              <Link
-                to="/contact"
+              <a
+                href="https://www.google.com/maps/place/PUFU/@50.9439811,6.9137843,13z/data=!4m12!1m2!2m1!1spufu!3m8!1s0x47bf25d3d26e3dbd:0x80960f5d81be9d56!8m2!3d50.9498431!4d6.9119139!9m1!1b1!15sCgRwdWZ1WgYiBHB1ZnWSARtqYXBhbmVzZV9jb25mZWN0aW9uZXJ5X3Nob3DgAQA!16s%2Fg%2F11lnw29pw7?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full text-white font-medium transition-all hover:scale-105"
                 style={{
                   background: '#111',
@@ -408,7 +410,7 @@ export function Home() {
                 }}
               >
                 Jetzt besuchen <ArrowRight className="w-4 h-4" />
-              </Link>
+              </a>
             </div>
 
           </motion.div>
