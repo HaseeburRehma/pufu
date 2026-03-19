@@ -118,8 +118,6 @@ export function Home() {
                 color: '#FDA5D5',
                 letterSpacing: '-0.5px',
                 lineHeight: 1.12,
-                border: '2px solid #3B9DEB',
-                padding: '2px 6px',
                 marginTop: 4,
               }}>
                 Soufflé-Pancakes<br />&amp; Premium<br />Matcha in Köln
