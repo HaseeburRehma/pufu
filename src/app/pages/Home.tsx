@@ -30,19 +30,34 @@ export function Home() {
 
   const testimonials = [
     {
-      name: 'Sophie M.',
-      text: 'Die Soufflé-Pancakes sind unglaublich fluffig und einfach etwas Besonderes.',
+      name: 'Berk Tezel',
+      text: 'I had an amazing experience at this pancake place! The pancakes were incredibly fluffy, perfectly cooked, and full of flavor.',
       rating: 5,
     },
     {
-      name: 'Hans K.',
-      text: 'Wunderschönes Café-Konzept mit stilvollem Ambiente und richtig gutem Matcha.',
+      name: 'Adnan Syed',
+      text: 'The staff was nice and easygoing. I liked that they are multilingual which has added a cool touch. If you’re into sweets, it’s worth a try. definitely 5 stars.',
       rating: 5,
     },
     {
-      name: 'Elena W.',
-      text: 'Perfekt für einen süßen Ausflug in Köln – geschmacklich und optisch ein Highlight.',
+      name: 'Ines Ouadi',
+      text: 'Real fluffy pancakes ! So hard to find!🤩 Drinks are amazing and the services is top 😁',
       rating: 5,
+    },
+    {
+      name: 'Ahmad Faiq Anwar',
+      text: 'This spot is right next to our Airbnb, and I think the pancakes are absolutely delicious. My favorite is the Oreo pancake. Definitely a 5/5!',
+      rating: 5,
+    },
+    {
+      name: 'Jhos Sánchez',
+      text: 'The Japanese pistachio pancake was delicious',
+      rating: 5,
+    },
+    {
+      name: 'Hakan Bektas',
+      text: 'I ordered the Oreo pancake; it tasted good. The staff were nice and helpful. A small but nice place.',
+      rating: 4,
     },
   ];
 
@@ -222,7 +237,7 @@ export function Home() {
               className="inline-flex items-center font-semibold transition-colors"
               style={{ color: '#E60076', textDecoration: 'none', fontSize: 15 }}
             >
-              View Full Menu <ArrowRight className="ml-2 w-4 h-4" />
+              Menü anschauen <ArrowRight className="ml-2 w-4 h-4" />
             </Link>
           </div>
         </div>
@@ -420,7 +435,7 @@ export function Home() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
               <motion.div
                 key={testimonial.name}
@@ -428,18 +443,35 @@ export function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-gradient-to-br from-pink-50/30 to-white p-8 rounded-2xl shadow-sm"
+                className="bg-gradient-to-br from-pink-50/30 to-white p-8 rounded-2xl shadow-sm border border-pink-100/50"
               >
                 <div className="flex mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <span key={i} className="text-pink-300">★</span>
+                  {[...Array(5)].map((_, i) => (
+                    <span key={i} className={i < testimonial.rating ? "text-pink-400" : "text-gray-200"}>★</span>
                   ))}
                 </div>
-                <p className="text-gray-700 mb-4 leading-relaxed">„{testimonial.text}"</p>
+                <p className="text-gray-700 mb-4 leading-relaxed line-clamp-4">„{testimonial.text}"</p>
                 <p className="font-medium text-gray-900">— {testimonial.name}</p>
               </motion.div>
             ))}
           </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mt-12"
+          >
+            <a
+              href="https://www.google.com/maps/place/PUFU/@50.9439811,6.9137843,13z/data=!4m12!1m2!2m1!1spufu!3m8!1s0x47bf25d3d26e3dbd:0x80960f5d81be9d56!8m2!3d50.9498431!4d6.9119139!9m1!1b1!15sCgRwdWZ1WgYiBHB1ZnWSARtqYXBhbmVzZV9jb25mZWN0aW9uZXJ5X3Nob3DgAQA!16s%2Fg%2F11lnw29pw7?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full border-2 border-pink-200 text-[#E60076] font-medium hover:bg-pink-50 transition-all"
+              style={{ fontFamily: 'Inter, sans-serif' }}
+            >
+              Alle Bewertungen auf Google ansehen <ArrowRight className="w-4 h-4" />
+            </a>
+          </motion.div>
         </div>
       </section>
 

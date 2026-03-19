@@ -134,11 +134,10 @@ export function Layout() {
                 <a href="https://instagram.com/pufu.cologne" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#A89080] transition-colors">
                   <Instagram size={20} />
                 </a>
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#A89080] transition-colors">
-                  <Facebook size={20} />
-                </a>
-                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#A89080] transition-colors">
-                  <Youtube size={20} />
+                <a href="https://www.tiktok.com/@pufu.cologne" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#A89080] transition-colors">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                    <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.59-1.01-.01 2.62-.02 5.24-.02 7.86-.02 2.04-.51 4.14-1.8 5.75-1.41 1.77-3.81 2.58-5.98 2.36-2.22-.17-4.33-1.47-5.39-3.41-1.21-2.14-1.14-4.99.21-7.05 1.05-1.66 2.91-2.73 4.87-2.85v4.14c-1.11.12-2.19.74-2.75 1.69-.58 1-.58 2.29-.01 3.29.56.96 1.64 1.57 2.75 1.7 1.1.13 2.24-.26 3.01-1.05.81-.84.99-2.09.98-3.23V0h-.01z"/>
+                  </svg>
                 </a>
               </div>
             </div>
@@ -163,8 +162,12 @@ export function Layout() {
               </h4>
               <div className="text-[15px] text-gray-500 space-y-4">
                 <div>
-                  <p>Vogelsanger Str. 197B</p>
-                  <p>50825 Cologne, Germany</p>
+                  <p className="font-medium text-gray-900 mb-1">PUFU Ehrenfeld</p>
+                  <p>Vogelsanger Str. 197B, 50825 Köln</p>
+                </div>
+                <div className="pt-2">
+                  <p className="font-medium text-gray-900 mb-1">PUFU Köln Arcaden</p>
+                  <p>Kalker Hauptstraße 55, 51103 Köln</p>
                 </div>
                 <div className="pt-2">
                   <p>Mon - Sun: 10:00 - 22:00</p>

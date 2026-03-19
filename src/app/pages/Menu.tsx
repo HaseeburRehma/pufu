@@ -18,9 +18,9 @@ export function Menu() {
   const [activeCategory, setActiveCategory] = useState('all');
 
   const categories = [
-    { id: 'all', name: 'All Items' },
-    { id: 'pancakes', name: 'Soufflé Pancakes' },
-    { id: 'drinks', name: 'Beverages' },
+    { id: 'all', name: 'Alle' },
+    { id: 'pancakes', name: 'Souffle Pancakes' },
+    { id: 'drinks', name: 'Getränke' },
     { id: 'desserts', name: 'Desserts' },
   ];
 

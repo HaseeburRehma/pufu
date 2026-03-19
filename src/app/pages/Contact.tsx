@@ -55,9 +55,9 @@ export function Contact() {
     {
       icon: <Mail className="w-5 h-5" />,
       title: 'E-Mail',
-      info: 'hello@pufu-cologne.com',
+      info: 'info@tylotech.de',
       action: 'E-Mail senden',
-      href: 'mailto:hello@pufu-cologne.com',
+      href: 'mailto:info@tylotech.de',
     },
     {
       icon: <Clock className="w-5 h-5" />,
@@ -70,8 +70,15 @@ export function Contact() {
 
   const socialLinks = [
     { icon: <Instagram className="w-5 h-5" />, name: 'Instagram', url: 'https://instagram.com/pufu.cologne' },
-    { icon: <Facebook className="w-5 h-5" />, name: 'Facebook', url: 'https://facebook.com' },
-    { icon: <Youtube className="w-5 h-5" />, name: 'YouTube', url: 'https://youtube.com' },
+    {
+      icon: (
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+          <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.59-1.01-.01 2.62-.02 5.24-.02 7.86-.02 2.04-.51 4.14-1.8 5.75-1.41 1.77-3.81 2.58-5.98 2.36-2.22-.17-4.33-1.47-5.39-3.41-1.21-2.14-1.14-4.99.21-7.05 1.05-1.66 2.91-2.73 4.87-2.85v4.14c-1.11.12-2.19.74-2.75 1.69-.58 1-.58 2.29-.01 3.29.56.96 1.64 1.57 2.75 1.7 1.1.13 2.24-.26 3.01-1.05.81-.84.99-2.09.98-3.23V0h-.01z" />
+        </svg>
+      ),
+      name: 'TikTok',
+      url: 'https://www.tiktok.com/@pufu.cologne',
+    },
   ];
 
   const faqs = [
@@ -320,9 +327,6 @@ export function Contact() {
             Ideal für Dessert-Liebhaber, Matcha-Fans und alle, die Genuss in stilvoller Atmosphäre suchen.
           </p>
 
-          <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: 'rgba(255,255,255,0.15)', border: '1.5px dashed rgba(255,255,255,0.6)', color: '#fff', fontFamily: 'Inter,sans-serif', fontSize: 14, fontWeight: 500, padding: '10px 20px', borderRadius: 100, marginBottom: 32 }}>
-            💝 Erstbesuch? Nutze Code <strong style={{ marginLeft: 4 }}>PUFU15</strong> für 15% Rabatt
-          </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact"

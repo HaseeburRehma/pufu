@@ -44,7 +44,6 @@ export function Franchise() {
     { value: '4.9', label: 'Durchschnittsbewertung' },
     { value: '2', label: 'Standorte' },
     { value: '4K+', label: 'Zufriedene Kunden' },
-    { value: '100+', label: 'Menüpunkte' },
   ];
 
   const benefits = [
