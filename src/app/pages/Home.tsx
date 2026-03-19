@@ -76,7 +76,7 @@ export function Home() {
           HERO SECTION
       ═══════════════════════════════════════════ */}
       <section className="relative w-full bg-white overflow-hidden">
-        <div className="max-w-[1200px] mx-auto px-5 lg:px-10 py-8 lg:py-10 flex flex-col lg:flex-row items-center lg:items-center gap-8 lg:gap-5">
+        <div className="max-w-[1200px] mx-auto px-5 lg:px-10 pt-8 pb-8 lg:pt-32 lg:pb-16 flex flex-col lg:flex-row items-center lg:items-center gap-8 lg:gap-5">
 
           {/* ── LEFT COLUMN ── */}
           <div className="relative z-10 w-full lg:w-[480px] flex-shrink-0">
