@@ -23,10 +23,10 @@ export function Layout() {
   }, [location.pathname]);
 
   const navLinks = [
-    { name: 'Home', path: '/' },
-    { name: 'Menu', path: '/menu' },
+    { name: 'Pufu', path: '/' },
+    { name: 'Menü', path: '/menu' },
     { name: 'Franchise', path: '/franchise' },
-    { name: 'Contact', path: '/contact' },
+    { name: 'Kontakt', path: '/contact' },
   ];
 
   return (
