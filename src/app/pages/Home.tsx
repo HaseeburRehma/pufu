@@ -75,8 +75,10 @@ export function Home() {
       {/* ═══════════════════════════════════════════
           HERO SECTION
       ═══════════════════════════════════════════ */}
-      <section className="relative w-full bg-white overflow-hidden">
-        <div className="max-w-[1200px] mx-auto px-5 lg:px-10 pt-8 pb-8 lg:pt-32 lg:pb-16 flex flex-col lg:flex-row items-center lg:items-center gap-8 lg:gap-5">
+      <section className="relative w-full bg-white overflow-hidden"
+
+      >
+        <div className="max-w-7xl mx-auto px-5 lg:px-12 pt-8 pb-8 lg:pt-[20px] lg:pb-16 flex flex-col lg:flex-row items-center lg:justify-between gap-8 lg:gap-0">
 
           {/* ── LEFT COLUMN ── */}
           <div className="relative z-10 w-full lg:w-[480px] flex-shrink-0">
@@ -145,11 +147,11 @@ export function Home() {
           </div>
 
           {/* ── RIGHT IMAGE ── */}
-          <div className="relative w-full lg:flex-1 lg:max-w-[580px]">
+          <div className="relative w-full lg:w-auto lg:flex-1 lg:flex lg:justify-end">
             <img
               src="/Container.png"
               alt="Japanese Soufflé Pancakes display"
-              className="w-full block"
+              className="w-full lg:w-auto lg:max-w-[640px] block"
               style={{ borderRadius: 20, objectFit: 'cover' }}
             />
             {/* Rating badge */}
@@ -349,7 +351,7 @@ export function Home() {
             {/* Text content — padded left on desktop to clear the image */}
             <div
               className="relative z-10 text-center py-12 px-6"
-              style={{ paddingLeft: 'clamp(24px, 22vw, 280px)' }}
+
             >
               <Sparkles
                 className="mx-auto mb-4"
