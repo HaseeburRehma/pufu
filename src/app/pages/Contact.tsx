@@ -63,7 +63,7 @@ export function Contact() {
       icon: <Clock className="w-5 h-5" />,
       title: 'Öffnungszeiten',
       info: 'Mo–So: 10:00–22:00 Uhr',
-      action: 'Details ansehen',
+      action: 'Siehe Standorte',
       href: '#standorte',
     },
   ];
@@ -207,7 +207,7 @@ export function Contact() {
           {/* RIGHT – Social + FAQ */}
           <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
             <h2 style={{ fontFamily: 'Georgia,serif', fontSize: 'clamp(26px,3.5vw,38px)', fontWeight: 400, color: '#111', marginBottom: 12 }}>
-              Folge <span style={{ color: '#FDA5D5' }}>unserer Reise</span>
+              Folgt <span style={{ color: '#FDA5D5' }}>uns</span>
             </h2>
             <p style={{ fontFamily: 'Inter,sans-serif', fontSize: 14, color: '#6B7280', lineHeight: 1.65, marginBottom: 28 }}>
               Folge uns auf Social Media für Updates, besondere Angebote und Einblicke hinter die Kulissen.
