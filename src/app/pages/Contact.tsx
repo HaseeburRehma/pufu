@@ -12,15 +12,21 @@ export function Contact() {
     e.preventDefault();
     setSubmitting(true);
     try {
-      await fetch('/api/contact', {
+      await fetch('https://formsubmit.co/ajax/info@tylotech.de', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          ...formData,
+          _subject: `Neue Kontaktanfrage: ${formData.subject}`,
+          _template: 'table'
+        }),
       });
-    } catch (_) { }
+      setSubmitted(true);
+      setFormData({ name: '', email: '', subject: '', message: '' });
+    } catch (_) {
+      // In a real app, we'd show an error message here
+    }
     setSubmitting(false);
-    setSubmitted(true);
-    setFormData({ name: '', email: '', subject: '', message: '' });
   };
 
   const locations = [

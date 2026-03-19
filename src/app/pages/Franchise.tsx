@@ -29,15 +29,29 @@ export function Franchise() {
     e.preventDefault();
     setSubmitting(true);
     try {
-      await fetch('/api/franchise-inquiry', {
+      await fetch('https://formsubmit.co/ajax/info@tylotech.de', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          ...formData,
+          _subject: `Neue Franchise-Anfrage von ${formData.fullName}`,
+          _template: 'table'
+        }),
       });
-    } catch (_) { }
+      setSubmitted(true);
+      setFormData({
+        fullName: '',
+        email: '',
+        phone: '',
+        location: '',
+        experience: '',
+        investment: '',
+        message: '',
+      });
+    } catch (_) {
+      // In a real app, we'd show an error message here
+    }
     setSubmitting(false);
-    setSubmitted(true);
-    setFormData({ fullName: '', email: '', phone: '', location: '', experience: '', investment: '', message: '' });
   };
 
   const stats = [
