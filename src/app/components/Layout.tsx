@@ -258,7 +258,13 @@ export function Layout() {
 
           {/* Bottom Bar */}
           <div className="mt-20 pt-8 border-t border-gray-100 flex flex-col sm:flex-row justify-between items-center text-[13px] text-gray-400">
-            <p>© 2026 PUFU. Alle Rechte vorbehalten.</p>
+            <div className="flex flex-col sm:flex-row items-center sm:space-x-6 space-y-2 sm:space-y-0 text-center sm:text-left">
+              <p>© 2026 PUFU. Alle Rechte vorbehalten.</p>
+              <div className="flex space-x-4">
+                <Link to="/impressum" className="hover:text-gray-900 transition-colors">Impressum</Link>
+                <Link to="/datenschutz" className="hover:text-gray-900 transition-colors">Datenschutz</Link>
+              </div>
+            </div>
             <TypingEffect />
           </div>
         </div>
