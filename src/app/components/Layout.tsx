@@ -4,6 +4,86 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { FloatingElements } from './FloatingElements';
 
+function TypingEffect() {
+  const [displayText, setDisplayText] = useState('');
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [index, setIndex] = useState(0);
+
+  const normalText = "Designed & developed by ";
+  const boldText = "TYLOTECH";
+  const fullText = normalText + boldText;
+
+  const speed = 80;
+  const eraseSpeed = 40;
+  const delayAfterTyping = 1500;
+  const delayAfterErase = 500;
+
+  useEffect(() => {
+    let timeoutId: any;
+
+    const typeLoop = () => {
+      if (!isDeleting && index <= fullText.length) {
+        setDisplayText(fullText.substring(0, index));
+        setIndex(prev => prev + 1);
+        timeoutId = setTimeout(typeLoop, speed);
+      } else if (isDeleting && index >= 0) {
+        setDisplayText(fullText.substring(0, index));
+        setIndex(prev => prev - 1);
+        timeoutId = setTimeout(typeLoop, eraseSpeed);
+      } else if (!isDeleting) {
+        setIsDeleting(true);
+        timeoutId = setTimeout(typeLoop, delayAfterTyping);
+      } else {
+        setIsDeleting(false);
+        setIndex(0);
+        timeoutId = setTimeout(typeLoop, delayAfterErase);
+      }
+    };
+
+    timeoutId = setTimeout(typeLoop, speed);
+    return () => clearTimeout(timeoutId);
+  }, [index, isDeleting]);
+
+  const renderContent = () => {
+    if (displayText.startsWith(normalText)) {
+      const boldPart = displayText.slice(normalText.length);
+      return (
+        <>
+          {normalText}
+          <strong className="font-bold text-gray-900">{boldPart}</strong>
+        </>
+      );
+    }
+    return displayText;
+  };
+
+  return (
+    <a
+      href="https://tylotech.de"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block hover:opacity-80 transition-opacity"
+    >
+      <span id="typing-text" className="text-[13px] whitespace-nowrap text-gray-400">
+        {renderContent()}
+      </span>
+      <style>{`
+        #typing-text::after {
+          content: '|';
+          margin-left: 3px;
+          animation: blink 1s infinite;
+          color: #A89080;
+        }
+
+        @keyframes blink {
+          0%, 50%, 100% { opacity: 1; }
+          25%, 75% { opacity: 0; }
+        }
+      `}</style>
+    </a>
+  );
+}
+
 export function Layout() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -179,10 +259,11 @@ export function Layout() {
           {/* Bottom Bar */}
           <div className="mt-20 pt-8 border-t border-gray-100 flex flex-col sm:flex-row justify-between items-center text-[13px] text-gray-400">
             <p>© 2026 PUFU. Alle Rechte vorbehalten.</p>
-            <p className="mt-2 sm:mt-0">Mit Liebe in Köln gestaltet.</p>
+            <TypingEffect />
           </div>
         </div>
       </footer>
+
     </div>
   );
 }
