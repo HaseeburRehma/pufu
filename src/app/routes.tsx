@@ -13,7 +13,7 @@ export const router = createBrowserRouter([
       { index: true, Component: Home },
       { path: "menu", Component: Menu },
       { path: "franchise", Component: Franchise },
-      { path: "contact", Component: Contact },
+      { path: "kontakt", Component: Contact },
     ],
   },
 ]);

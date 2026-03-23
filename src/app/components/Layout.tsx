@@ -106,7 +106,7 @@ export function Layout() {
     { name: 'Pufu', path: '/' },
     { name: 'Menü', path: '/menu' },
     { name: 'Franchise', path: '/franchise' },
-    { name: 'Kontakt', path: '/contact' },
+    { name: 'Kontakt', path: '/kontakt' },
   ];
 
   return (
@@ -231,7 +231,7 @@ export function Layout() {
                 <li><Link to="/" className="text-gray-500 hover:text-gray-900 text-[15px] transition-colors">Startseite</Link></li>
                 <li><Link to="/menu" className="text-gray-500 hover:text-gray-900 text-[15px] transition-colors">Menü</Link></li>
                 <li><Link to="/franchise" className="text-gray-500 hover:text-gray-900 text-[15px] transition-colors">Franchise</Link></li>
-                <li><Link to="/contact" className="text-gray-500 hover:text-gray-900 text-[15px] transition-colors">Kontakt</Link></li>
+                <li><Link to="/kontakt" className="text-gray-500 hover:text-gray-900 text-[15px] transition-colors">Kontakt</Link></li>
               </ul>
             </div>
 

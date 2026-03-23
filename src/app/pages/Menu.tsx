@@ -380,7 +380,7 @@ export function Menu() {
 
           <div style={{ marginTop: 20 }}>
             <Link
-              to="/contact"
+              to="/kontakt"
               style={{
                 display: 'inline-flex', alignItems: 'center',
                 background: '#111', color: '#fff',

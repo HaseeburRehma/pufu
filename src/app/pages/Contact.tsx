@@ -335,7 +335,7 @@ export function Contact() {
 
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/contact"
+            <Link to="/kontakt"
               className="inline-flex items-center justify-center rounded-full font-medium transition-all hover:scale-105"
               style={{ background: '#fff', color: '#111', padding: '14px 36px', fontFamily: 'Inter,sans-serif', fontSize: 15, textDecoration: 'none' }}>
               Standorte ansehen

@@ -153,7 +153,7 @@ export function Home() {
                 style={{ background: '#111', fontFamily: 'Inter, sans-serif', textDecoration: 'none' }}>
                 Menü entdecken <ArrowRight className="w-4 h-4" />
               </Link>
-              <Link to="/contact"
+              <Link to="/kontakt"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-sm font-medium"
                 style={{ background: 'transparent', color: '#111', border: '1.5px solid #ddd', fontFamily: 'Inter, sans-serif', textDecoration: 'none' }}>
                 Standorte ansehen
@@ -537,7 +537,7 @@ export function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              to="/contact"
+              to="/kontakt"
               className="inline-flex items-center justify-center rounded-full font-medium transition-all hover:scale-105"
               style={{
                 background: '#fff',
