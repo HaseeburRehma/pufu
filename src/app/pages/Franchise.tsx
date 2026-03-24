@@ -383,16 +383,13 @@ export function Franchise() {
                   </div>
                   <div>
                     <label style={labelStyle}>Investitionsrahmen</label>
-                    <select
+                    <input
+                      type="text"
+                      placeholder="z.B. €200.000 - €300.000"
                       value={formData.investment}
                       onChange={(e) => setFormData({ ...formData, investment: e.target.value })}
-                      style={{ ...inputStyle, color: formData.investment ? '#111' : '#9CA3AF' }}
-                    >
-                      <option value="">Bitte auswählen</option>
-                      <option value="bis-200k">Bis €200.000</option>
-                      <option value="200-300k">€200.000 – €300.000</option>
-                      <option value="300k-plus">Über €300.000</option>
-                    </select>
+                      style={inputStyle}
+                    />
                   </div>
                 </div>
 
