@@ -6,23 +6,23 @@ import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 export function Home() {
   const featuredItems = [
     {
-      name: 'Classic Soufflé',
-      description: 'Light, fluffy, and delicate',
-      price: '€12.90',
+      name: 'PUFU Cherry',
+      description: 'mit heißen Kirschen & Vanillesoße',
+      price: '€10.90',
       image: '/Menu (5).png',
       bg: '#fce8e8',
     },
     {
-      name: 'Matcha Dreams',
-      description: 'Premium matcha blend',
-      price: '€6.50',
+      name: 'PUFU Applecrumble',
+      description: 'mit Apfelmus, Butterkekscrumble & Zimt',
+      price: '€10.90',
       image: '/featured2.png',
       bg: '#fdf3e0',
     },
     {
-      name: 'Strawberry Cloud',
-      description: 'Topped with fresh berries',
-      price: '€14.50',
+      name: 'PUFU Choc',
+      description: 'mit Nuss-Nougatcreme',
+      price: '€8.90',
       image: '/featured3.png',
       bg: '#f5e6e0',
     },

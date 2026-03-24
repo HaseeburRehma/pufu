@@ -124,7 +124,7 @@ export function Menu() {
       name: 'PUFU Mango',
       description: 'mit Mangocreme, Minze & Kokosraspeln',
       price: '€11.90',
-      image: '/Menu (12).png',
+      image: '/mango.PNG',
       category: 'pancakes',
       bg: '#FEF9E2',
       isNew: true,
