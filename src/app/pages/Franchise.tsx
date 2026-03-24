@@ -385,7 +385,7 @@ export function Franchise() {
                     <label style={labelStyle}>Investitionsrahmen</label>
                     <input
                       type="text"
-                      placeholder="z.B. €200.000 - €300.000"
+                      placeholder=""
                       value={formData.investment}
                       onChange={(e) => setFormData({ ...formData, investment: e.target.value })}
                       style={inputStyle}

@@ -164,7 +164,7 @@ export function Home() {
           {/* ── RIGHT IMAGE ── */}
           <div className="relative w-full lg:w-auto lg:flex-1 lg:flex lg:justify-end">
             <img
-              src="/Container.png"
+              src="/Container (4).png"
               alt="Japanese Soufflé Pancakes display"
               className="w-full lg:w-auto lg:max-w-[640px] block"
               style={{ borderRadius: 20, objectFit: 'cover' }}
