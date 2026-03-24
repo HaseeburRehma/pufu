@@ -12,7 +12,7 @@ export function Contact() {
     e.preventDefault();
     setSubmitting(true);
     try {
-      await fetch('https://formsubmit.co/ajax/info@tylotech.de', {
+      await fetch('https://formsubmit.co/ajax/demirdemirgmbh@gmail.com', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -34,8 +34,8 @@ export function Contact() {
       name: 'PUFU Köln Arcaden',
       address: 'Kalker Hauptstraße 55',
       city: '51103 Köln',
-      phone: '+49 221 123 4567',
-      hours: ['Mo–So: 10:00–22:00 Uhr'],
+      phone: '+49 152 06128073',
+      hours: ['Mo–Do: 10:00–20:00 Uhr', 'Fr–Sa: 10:00–21:00 Uhr', 'So: Geschlossen'],
       mapEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2514.5!2d6.9950!3d50.9280!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bf25a5a3968a85%3A0x4fdbb1a5a2ce12c!2sK%C3%B6ln%20Arcaden!5e0!3m2!1sde!2sde!4v1700000000001',
       mapsUrl: 'https://maps.google.com/?q=Köln+Arcaden,+Kalker+Hauptstraße+55,+51103+Köln',
     },
@@ -43,7 +43,7 @@ export function Contact() {
       name: 'PUFU Ehrenfeld',
       address: 'Vogelsanger Str. 197B',
       city: '50825 Köln',
-      phone: '+49 221 765 4321',
+      phone: '+49 152 06128073',
       hours: ['Mo–Fr: 14:00–22:00 Uhr', 'Sa–So: 12:00–22:00 Uhr'],
       mapEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2513.2!2d6.9200!3d50.9530!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bf24f5ab2478b9%3A0x8f57cb3b3dd90961!2sVogelsanger+Stra%C3%9Fe+197b!5e0!3m2!1sde!2sde!4v1700000000002',
       mapsUrl: 'https://maps.google.com/?q=Vogelsanger+Straße+197B,+50825+Köln',
@@ -54,21 +54,21 @@ export function Contact() {
     {
       icon: <Phone className="w-5 h-5" />,
       title: 'Telefon',
-      info: '+49 221 123 4567',
+      info: '+49 152 06128073',
       action: 'Anrufen',
-      href: 'tel:+492211234567',
+      href: 'tel:+4915206128073',
     },
     {
       icon: <Mail className="w-5 h-5" />,
       title: 'E-Mail',
-      info: 'info@tylotech.de',
+      info: 'demirdemirgmbh@gmail.com',
       action: 'E-Mail senden',
-      href: 'mailto:info@tylotech.de',
+      href: 'mailto:demirdemirgmbh@gmail.com',
     },
     {
       icon: <Clock className="w-5 h-5" />,
       title: 'Öffnungszeiten',
-      info: 'Mo–So: 10:00–22:00 Uhr',
+
       action: 'Siehe Standorte',
       href: '#standorte',
     },

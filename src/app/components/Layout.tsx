@@ -244,13 +244,12 @@ export function Layout() {
                 <div>
                   <p className="font-medium text-gray-900 mb-1">PUFU Ehrenfeld</p>
                   <p>Vogelsanger Str. 197B, 50825 Köln</p>
+                  <p className="text-[12px] text-gray-400 mt-1">Mo–Fr: 14:00–22:00 | Sa–So: 12:00–22:00</p>
                 </div>
                 <div className="pt-2">
                   <p className="font-medium text-gray-900 mb-1">PUFU Köln Arcaden</p>
                   <p>Kalker Hauptstraße 55, 51103 Köln</p>
-                </div>
-                <div className="pt-2">
-                  <p>Mon - Sun: 10:00 - 22:00</p>
+                  <p className="text-[12px] text-gray-400 mt-1">Mo–Do: 10:00–20:00 | Fr–Sa: 10:00–21:00 | So: Geschlossen</p>
                 </div>
               </div>
             </div>

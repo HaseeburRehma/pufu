@@ -29,7 +29,7 @@ export function Franchise() {
     e.preventDefault();
     setSubmitting(true);
     try {
-      await fetch('https://formsubmit.co/ajax/info@tylotech.de', {
+      await fetch('https://formsubmit.co/ajax/demirdemirgmbh@gmail.com', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
