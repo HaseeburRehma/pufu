@@ -3,6 +3,7 @@ import { Menu, X, Instagram, Facebook, Youtube } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { FloatingElements } from './FloatingElements';
+import { CookieBanner } from './CookieBanner';
 
 function TypingEffect() {
   const [displayText, setDisplayText] = useState('');
@@ -269,6 +270,7 @@ export function Layout() {
         </div>
       </footer>
 
+      <CookieBanner />
     </div>
   );
 }

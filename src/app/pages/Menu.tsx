@@ -34,36 +34,29 @@ export function Menu() {
       image: '/Menu (7).png',
       category: 'pancakes',
       bg: '#FEF3E2',
+      isPopular: true,
     },
     {
       id: 2,
       name: 'PUFU Choc',
       description: 'mit Nuss-Nougatcreme',
       price: '€8.90',
-      image: '/Menu (9).png',
+      image: '/Menu (8).png',
       category: 'pancakes',
       bg: '#FEF3E2',
+      isPopular: true,
     },
     {
       id: 3,
       name: 'PUFU Bueno',
       description: 'mit Haselnusscreme, Schoko & Krokant',
       price: '€11.90',
-      image: '/Menu (5).png',
+      image: '/Menu (16).png',
       category: 'pancakes',
       bg: '#FCE8E8',
-      isPopular: true,
+      isNew: true,
     },
-    {
-      id: 4,
-      name: 'PUFU Lotus',
-      description: 'mit Lotuscreme & Lotus Crumbles',
-      price: '€9.90',
-      image: '/Menu (10).png',
-      category: 'pancakes',
-      bg: '#FCE8E8',
-      isPopular: true,
-    },
+
     {
       id: 5,
       name: 'PUFU Raffaello',
@@ -78,7 +71,7 @@ export function Menu() {
       name: 'PUFU Vanille',
       description: 'mit Vanillesoße, Sahne & Lotuscrumbles',
       price: '€10.50',
-      image: '/Menu (1).png',
+      image: '/Menu (9).png',
       category: 'pancakes',
       bg: '#FEF9E2',
     },
@@ -87,26 +80,18 @@ export function Menu() {
       name: 'PUFU Pistazie',
       description: 'mit Pistaziencreme, weißen Schokoraspeln & Pistazien',
       price: '€11.90',
-      image: '/Menu (13).png',
+      image: '/Menu (1).png',
       category: 'pancakes',
       bg: '#E8F5E2',
       isPopular: true,
     },
-    {
-      id: 8,
-      name: 'PUFU Yuzu Lemon',
-      description: 'mit Yuzucreme, Mandelblätter & Zitronenzeste',
-      price: '€11.90',
-      image: '/Menu (6).png',
-      category: 'pancakes',
-      bg: '#FCE8E8',
-    },
+
     {
       id: 9,
       name: 'PUFU Cherry',
       description: 'mit heißen Kirschen & Vanillesoße',
       price: '€10.90',
-      image: '/Menu (8).png',
+      image: '/Menu (5).png',
       category: 'pancakes',
       bg: '#FCE8E8',
     },
@@ -115,7 +100,7 @@ export function Menu() {
       name: 'PUFU Pitaya',
       description: 'mit Drachenfruchtcreme, Chiasamen & Honig',
       price: '€10.90',
-      image: '/Menu (3).png',
+      image: '/menu (22).png',
       category: 'pancakes',
       bg: '#FEF3E2',
     },
@@ -124,84 +109,63 @@ export function Menu() {
       name: 'PUFU Matcha',
       description: 'mit Matchacreme, weißer Schoko & Schokoraspeln',
       price: '€11.90',
-      image: '/Menu (4).png',
+      image: '/Menu (17).png',
       category: 'pancakes',
       bg: '#E8F5E2',
+      isPopular: true,
     },
     {
       id: 12,
       name: 'PUFU Applecrumble',
       description: 'mit Apfelmus, Butterkekscrumble & Zimt',
       price: '€10.90',
-      image: '/Menu.png',
+      image: '/featured2.png',
       category: 'pancakes',
       bg: '#E8F5E2',
     },
-    {
-      id: 13,
-      name: 'PUFU Mango',
-      description: 'mit Mangocreme, Minze & Kokosraspeln',
-      price: '€10.90',
-      image: '/Menu (11).png',
-      category: 'pancakes',
-      bg: '#FEF3E2',
-    },
+
     // --- DRINKS ---
     {
       id: 14,
       name: 'Premium Matcha Latte',
       description: 'Vanilla, Strawberry, Raspberry, Mango, Banana, Cherry, Blueberry, Coco, Yuzu, Pitaya, Pistachio',
       price: '€6.30',
-      image: '/Menu (4).png',
+      image: '/Menu (18).png',
       category: 'drinks',
       bg: '#E8F5E2',
+      isPopular: true,
     },
-    {
-      id: 15,
-      name: 'Coffee Specialties',
-      description: 'Espresso, Americano, Cappuccino, Flat White, Latte Macchiato, Karamell/Vanilla Latte',
-      price: 'ab €2.00',
-      image: '/Menu (1).png',
-      category: 'drinks',
-      bg: '#FEF3E2',
-    },
+
     {
       id: 16,
       name: 'Mizu Mocktails',
       description: 'Yuzu Lime Sparkle, Raspberry Dream, Mango Glow',
       price: '€4.90',
-      image: '/Menu (11).png',
+      image: '/Menu (19).png',
       category: 'drinks',
       bg: '#FCE8E8',
+      isNew: true,
     },
+
     {
       id: 17,
-      name: 'Tea & Selection',
+      name: 'Strawberry Smoothie',
       description: 'Frischer Minztee mit Honig, Pink Iced Tea, Heiße Schokolade',
-      price: 'ab €3.50',
+      price: '€3.50',
       image: '/Menu (3).png',
       category: 'drinks',
       bg: '#E8F5E2',
     },
-    // --- DESSERTS ---
     {
       id: 18,
-      name: 'Signature Mochi',
-      description: 'Handmade mochi with premium fillings',
-      price: '€8.90',
-      image: '/Menu (12).png',
-      category: 'desserts',
-      bg: '#FEF3E2',
-    },
-    {
-      id: 19,
-      name: 'Matcha Tiramisu',
-      description: 'Italian classic with a Japanese twist',
-      price: '€9.50',
-      image: '/Menu (13).png',
-      category: 'desserts',
+      name: 'Yuzu lime Sparkle',
+      description: '',
+      price: '€4.90',
+      image: '/Menu (10).png',
+      category: 'drinks',
       bg: '#E8F5E2',
     },
+
   ];
 
   const filteredItems =
@@ -386,42 +350,7 @@ export function Menu() {
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════
-          EXTRAS SECTION
-      ═══════════════════════════════════════ */}
-      <section style={{ padding: '0 0 64px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Pancake Extras */}
-            <div style={{ background: '#FAFAFA', padding: '32px', borderRadius: '24px', border: '1px solid #f0f0f0' }}>
-              <div className="flex justify-between items-center mb-6">
-                <h3 style={{ fontFamily: 'Georgia, serif', fontSize: 22, color: '#111' }}>Pancake Extras</h3>
-                <span style={{ background: '#E60076', color: '#fff', fontSize: 13, fontWeight: 600, padding: '4px 12px', borderRadius: 100 }}>+ €1.00</span>
-              </div>
-              <ul style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px', fontFamily: 'Inter, sans-serif', fontSize: 14, color: '#6B7280' }}>
-                <li>• Soße (Schoko, Karamell, Erdbeer)</li>
-                <li>• Topping (Kokos, Krokant, Schokoraspeln)</li>
-                <li>• Früchte (saisonale Früchte)</li>
-                <li>• Sahne</li>
-              </ul>
-            </div>
 
-            {/* Drink Extras */}
-            <div style={{ background: '#FAFAFA', padding: '32px', borderRadius: '24px', border: '1px solid #f0f0f0' }}>
-              <div className="flex justify-between items-center mb-6">
-                <h3 style={{ fontFamily: 'Georgia, serif', fontSize: 22, color: '#111' }}>Getränke Extras</h3>
-                <span style={{ background: '#111', color: '#fff', fontSize: 13, fontWeight: 600, padding: '4px 12px', borderRadius: 100 }}>+ €0.80</span>
-              </div>
-              <ul style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px', fontFamily: 'Inter, sans-serif', fontSize: 14, color: '#6B7280' }}>
-                <li>• Milchalternativen (Hafer, Kokos)</li>
-                <li>• Laktosefreie Milch</li>
-                <li>• Espresso Shot</li>
-                <li>• Sirup</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* ═══════════════════════════════════════
           BOTTOM CTA
