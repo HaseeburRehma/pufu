@@ -86,7 +86,7 @@ export function CookieBanner() {
             {/* Close button - top right */}
             <button 
               onClick={() => setIsVisible(false)}
-              className="absolute top-4 right-4 p-2 text-gray-400 hover:text-gray-600 transition-colors"
+              className="absolute top-6 right-6 p-2 text-gray-400 hover:text-gray-600 transition-colors"
             >
               <X className="w-5 h-5" />
             </button>
