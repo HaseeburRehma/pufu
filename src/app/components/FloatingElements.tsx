@@ -5,7 +5,7 @@ export function FloatingElements() {
     <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
       {/* Floating Circle 1 */}
       <motion.div
-        className="absolute top-1/4 left-1/4 w-64 h-64 bg-pink-100/20 rounded-full blur-3xl"
+        className="absolute top-1/4 left-1/4 w-64 h-64 bg-[#FBC49D]/10 rounded-full blur-3xl"
         animate={{
           y: [0, 30, 0],
           x: [0, 20, 0],
@@ -20,7 +20,7 @@ export function FloatingElements() {
 
       {/* Floating Circle 2 */}
       <motion.div
-        className="absolute top-1/3 right-1/4 w-96 h-96 bg-cream-100/20 rounded-full blur-3xl"
+        className="absolute top-1/3 right-1/4 w-96 h-96 bg-[#444]/5 rounded-full blur-3xl"
         animate={{
           y: [0, -40, 0],
           x: [0, -30, 0],
@@ -35,7 +35,7 @@ export function FloatingElements() {
 
       {/* Floating Circle 3 */}
       <motion.div
-        className="absolute bottom-1/4 left-1/3 w-80 h-80 bg-pink-50/30 rounded-full blur-3xl"
+        className="absolute bottom-1/4 left-1/3 w-80 h-80 bg-[#FBC49D]/5 rounded-full blur-3xl"
         animate={{
           y: [0, 25, 0],
           x: [0, 15, 0],

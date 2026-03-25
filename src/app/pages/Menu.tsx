@@ -173,7 +173,7 @@ export function Menu() {
       price: '€3.90',
       image: '/Menu (19).png',
       category: 'drinks',
-      bg: '#FDF2F8',
+      bg: '#FFF8F1',
     },
     {
       id: 29,
@@ -202,7 +202,7 @@ export function Menu() {
       price: '€4.90',
       image: '/2.png',
       category: 'drinks',
-      bg: '#FDF2F8',
+      bg: '#FFF8F1',
     },
     {
       id: 27,
@@ -232,7 +232,7 @@ export function Menu() {
       price: '€6.30',
       image: '/image00002.png',
       category: 'drinks',
-      bg: '#FDF2F8',
+      bg: '#FFF8F1',
       isPopular: true,
     },
     {
@@ -242,7 +242,7 @@ export function Menu() {
       price: '€6.30',
       image: '/image00003.png',
       category: 'drinks',
-      bg: '#FDF2F8',
+      bg: '#FFF8F1',
     },
     {
       id: 17,
@@ -278,7 +278,7 @@ export function Menu() {
       price: '€6.30',
       image: '/image00007.png',
       category: 'drinks',
-      bg: '#FDF2F8',
+      bg: '#FFF8F1',
     },
     {
       id: 21,
@@ -305,7 +305,7 @@ export function Menu() {
       price: '€6.30',
       image: '/image00010.png',
       category: 'drinks',
-      bg: '#FDF2F8',
+      bg: '#FFF8F1',
       isNew: true,
     },
     {
@@ -333,31 +333,28 @@ export function Menu() {
       ═══════════════════════════════════════ */}
       <section
         className="relative overflow-hidden"
-        style={{ background: 'linear-gradient(135deg, #fce4ef 0%, #fdf0f7 50%, #fce4ef 100%)', paddingTop: 72, paddingBottom: 72 }}
+        style={{ background: 'linear-gradient(135deg, #FFF8F1 0%, #fff 50%, #FFF8F1 100%)', paddingTop: 72, paddingBottom: 72 }}
       >
         {/* Watermark text */}
         <div
           className="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden"
           style={{ zIndex: 0 }}
         >
-          {['pufu', 'pufu', 'pufu', 'pufu', 'pufu', 'pufu'].map((t, i) => (
-            <span
-              key={i}
-              className="absolute text-pink-200 font-bold uppercase"
-              style={{
-                fontSize: 'clamp(60px, 10vw, 120px)',
-                opacity: 0.18,
-                whiteSpace: 'nowrap',
-                top: `${[8, 28, 48, 68][i % 4]}%`,
-                left: `${[-10, 20, 50, 80][i % 4]}%`,
-                transform: 'rotate(-15deg)',
-                fontFamily: 'Georgia, serif',
-                letterSpacing: 16,
-              }}
-            >
-              {t}
-            </span>
-          ))}
+          <span
+            className="absolute text-gray-100 font-bold uppercase"
+            style={{
+              fontSize: 'clamp(60px, 12vw, 140px)',
+              top: '50%',
+              left: '50%',
+              transform: 'translate(-50%, -50%)',
+              opacity: 0.4,
+              zIndex: 0,
+              whiteSpace: 'nowrap',
+              fontFamily: 'Inter, sans-serif'
+            }}
+          >
+            MENU
+          </span>
         </div>
 
         {/* Floating cake – top-left */}
@@ -377,18 +374,11 @@ export function Menu() {
 
         {/* Content */}
         <div className="relative z-10 max-w-3xl mx-auto px-4 text-center">
-          <div
-            className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full mb-5"
-            style={{ background: 'rgba(230,0,118,0.10)', color: '#E60076', fontSize: 13, fontWeight: 500, fontFamily: 'Inter, sans-serif' }}
-          >
-            ✨ Unser Menü
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: '#f5f5f5', color: '#444', fontSize: 13, fontWeight: 500, fontFamily: 'Inter, sans-serif', padding: '7px 16px', borderRadius: 100, marginBottom: 24 }}>
+            ✨ Authentisch & handgemacht
           </div>
-
-          <h1
-            className="font-light tracking-tight mb-4"
-            style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(38px, 6vw, 64px)', lineHeight: 1.1, color: '#111' }}
-          >
-            Unser <span style={{ color: '#FDA5D5' }}>Menü</span>
+          <h1 style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(32px, 5vw, 60px)', fontWeight: 400, color: '#111', marginBottom: 20 }}>
+            Unser <span style={{ color: '#FBC49D' }}>Menü</span>
           </h1>
 
           <p style={{ color: '#6B7280', fontFamily: 'Inter, sans-serif', fontSize: 16, lineHeight: 1.7, maxWidth: 480, margin: '0 auto 32px' }}>
@@ -466,7 +456,7 @@ export function Menu() {
                     )}
                     {item.isNew && (
                       <span style={{
-                        background: '#E60076', color: '#fff',
+                        background: '#444', color: '#fff',
                         fontSize: 11, fontWeight: 600, padding: '4px 10px',
                         borderRadius: 100, fontFamily: 'Inter, sans-serif',
                       }}>
@@ -487,7 +477,7 @@ export function Menu() {
                     </h3>
                     <span style={{
                       fontFamily: 'Inter, sans-serif', fontSize: 15,
-                      fontWeight: 500, color: '#E60076', flexShrink: 0,
+                      fontWeight: 500, color: '#FBC49D', flexShrink: 0,
                     }}>
                       {item.price}
                     </span>

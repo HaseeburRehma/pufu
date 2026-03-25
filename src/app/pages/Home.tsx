@@ -10,7 +10,7 @@ export function Home() {
       description: 'mit heißen Kirschen & Vanillesoße',
       price: '€10.90',
       image: '/Menu (5).png',
-      bg: '#fce8e8',
+      bg: '#FFF8F1',
     },
     {
       name: 'PUFU Applecrumble',
@@ -118,7 +118,7 @@ export function Home() {
 
             {/* Badge */}
             <div className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full mb-7"
-              style={{ background: '#FDF2F8', color: '#E60076', fontSize: 13, fontWeight: 500, fontFamily: 'Inter, sans-serif' }}>
+              style={{ background: '#FFF8F1', color: '#444', fontSize: 13, fontWeight: 500, fontFamily: 'Inter, sans-serif' }}>
               <span>✨</span>
               <span>Köln Arcaden &amp; Ehrenfeld</span>
             </div>
@@ -132,7 +132,7 @@ export function Home() {
                 fontFamily: 'Georgia, serif',
                 fontSize: 'clamp(40px, 5vw, 58px)',
                 fontWeight: 400,
-                color: '#FDA5D5',
+                color: '#FBC49D',
                 letterSpacing: '-0.5px',
                 lineHeight: 1.12,
                 marginTop: 4,
@@ -225,7 +225,7 @@ export function Home() {
                 <div className="text-center">
                   <h3 className="text-xl font-medium mb-1" style={{ fontFamily: 'Georgia, serif' }}>{item.name}</h3>
                   <p className="text-gray-500 text-sm mb-2">{item.description}</p>
-                  <p className="font-semibold text-base" style={{ color: '#E60076' }}>{item.price}</p>
+                  <p className="font-semibold text-base" style={{ color: '#444' }}>{item.price}</p>
                 </div>
               </motion.div>
             ))}
@@ -235,7 +235,7 @@ export function Home() {
             <Link
               to="/menu"
               className="inline-flex items-center font-semibold transition-colors"
-              style={{ color: '#E60076', textDecoration: 'none', fontSize: 15 }}
+              style={{ color: '#FBC49D', textDecoration: 'none', fontSize: 15 }}
             >
               Menü anschauen <ArrowRight className="ml-2 w-4 h-4" />
             </Link>
@@ -247,7 +247,7 @@ export function Home() {
       {/* ═══════════════════════════════════════════
           STORY SECTION
       ═══════════════════════════════════════════ */}
-      <section className="py-20 bg-gradient-to-b from-white to-pink-50/20">
+      <section className="py-20 bg-gradient-to-b from-white to-[#FFF8F1]/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
 
@@ -281,7 +281,7 @@ export function Home() {
                 className="font-light tracking-tight mb-6"
                 style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(32px, 4vw, 48px)', lineHeight: 1.1 }}
               >
-                Die Welt von <span style={{ color: '#FDA5D5' }}>PUFU</span>
+                Die Welt von <span style={{ color: '#FBC49D' }}>PUFU</span>
               </h2>
 
               <p className="text-gray-600 leading-relaxed mb-5" style={{ fontFamily: 'Inter, sans-serif', fontSize: 15 }}>
@@ -312,7 +312,7 @@ export function Home() {
                     className="flex flex-col items-center text-center p-5 bg-white rounded-2xl"
                     style={{ boxShadow: '0 1px 8px rgba(0,0,0,0.07)' }}
                   >
-                    <div className="mb-3 flex justify-center" style={{ color: '#FDA5D5' }}>{value.icon}</div>
+                    <div className="mb-3 flex justify-center" style={{ color: '#FBC49D' }}>{value.icon}</div>
                     <h4 className="font-semibold mb-1.5" style={{ fontSize: 13, color: '#111', fontFamily: 'Inter, sans-serif' }}>{value.title}</h4>
                     <p style={{ fontSize: 12, color: '#9CA3AF', lineHeight: 1.6, fontFamily: 'Inter, sans-serif' }}>{value.description}</p>
                   </motion.div>
@@ -327,7 +327,7 @@ export function Home() {
       {/* ═══════════════════════════════════════════
           PROMO BANNER
       ═══════════════════════════════════════════ */}
-      <section className="py-16" style={{ background: 'linear-gradient(to right, rgba(252,231,243,0.4), rgba(255,255,255,0.4), rgba(252,231,243,0.4))' }}>
+      <section className="py-16" style={{ background: 'linear-gradient(to right, rgba(251,196,157,0.1), rgba(255,255,255,0.1), rgba(251,196,157,0.1))' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -339,7 +339,7 @@ export function Home() {
             {/* Decorative blur blob */}
             <div
               className="absolute top-0 right-0 w-64 h-64 rounded-full opacity-30 pointer-events-none"
-              style={{ background: '#fce7f3', filter: 'blur(60px)' }}
+              style={{ background: '#FFF8F1', filter: 'blur(60px)' }}
             />
 
             {/* Drink image — exact Figma position */}
@@ -370,7 +370,7 @@ export function Home() {
             >
               <Sparkles
                 className="mx-auto mb-4"
-                style={{ width: 44, height: 44, color: '#FDA5D5' }}
+                style={{ width: 44, height: 44, color: '#FBC49D' }}
               />
               <h3
                 className="font-light mb-4"
@@ -445,11 +445,11 @@ export function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-gradient-to-br from-pink-50/30 to-white p-8 rounded-2xl shadow-sm border border-pink-100/50"
+                className="bg-gradient-to-br from-gray-50/30 to-white p-8 rounded-2xl shadow-sm border border-gray-100/50"
               >
                 <div className="flex mb-4">
                   {[...Array(5)].map((_, i) => (
-                    <span key={i} className={i < testimonial.rating ? "text-pink-400" : "text-gray-200"}>★</span>
+                    <span key={i} className={i < testimonial.rating ? "text-[#FBC49D]" : "text-gray-200"}>★</span>
                   ))}
                 </div>
                 <p className="text-gray-700 mb-4 leading-relaxed line-clamp-4">„{testimonial.text}"</p>
@@ -466,11 +466,11 @@ export function Home() {
           >
             <a
               href="https://www.google.com/maps/place/PUFU/@50.9439811,6.9137843,13z/data=!4m12!1m2!2m1!1spufu!3m8!1s0x47bf25d3d26e3dbd:0x80960f5d81be9d56!8m2!3d50.9498431!4d6.9119139!9m1!1b1!15sCgRwdWZ1WgYiBHB1ZnWSARtqYXBhbmVzZV9jb25mZWN0aW9uZXJ5X3Nob3DgAQA!16s%2Fg%2F11lnw29pw7?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full border-2 border-pink-200 text-[#E60076] font-medium hover:bg-pink-50 transition-all"
-              style={{ fontFamily: 'Inter, sans-serif' }}
-            >
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full border-2 border-[#FBC49D]/30 text-[#444] font-medium hover:bg-[#FFF8F1] transition-all"
+                style={{ fontFamily: 'Inter, sans-serif' }}
+              >
               Alle Bewertungen auf Google ansehen <ArrowRight className="w-4 h-4" />
             </a>
           </motion.div>
@@ -483,7 +483,7 @@ export function Home() {
       ═══════════════════════════════════════════ */}
       <section
         className="relative overflow-hidden py-20"
-        style={{ background: '#E60076' }}
+        style={{ background: '#444' }}
       >
         {/* ── Corner cake images ── */}
 

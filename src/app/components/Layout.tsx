@@ -121,13 +121,16 @@ export function Layout() {
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
-            <Link to="/" className="flex items-center space-x-3">
-              <span className="text-[30px] font-normal leading-[36px] tracking-[1.5px]" style={{ fontFamily: 'Georgia, serif', color: '#A89080' }}>
-                pufu
-              </span>
-              <span className="text-[10px] tracking-[0.3em] text-gray-400 mt-1 uppercase font-medium">
-                COLOGNE
-              </span>
+            <Link to="/" className="flex items-center">
+              <img src="/logo_pufu_new.png" alt="PUFU Cologne" className="h-14 w-14 object-contain" />
+              <div className="flex flex-col ml-1">
+                <span className="text-[20px] font-normal leading-tight tracking-[1px]" style={{ fontFamily: 'Georgia, serif', color: '#444' }}>
+                  pufu
+                </span>
+                <span className="text-[8px] tracking-[0.2em] text-gray-400 uppercase font-medium">
+                  COLOGNE
+                </span>
+              </div>
             </Link>
 
             {/* Desktop Navigation */}
@@ -137,15 +140,15 @@ export function Layout() {
                   key={link.path}
                   to={link.path}
                   className={`text-sm tracking-wide transition-colors relative group font-medium ${location.pathname === link.path
-                    ? 'text-[#A89080]'
-                    : 'text-gray-500 hover:text-[#FCCEE8]'
+                    ? 'text-[#FBC49D]'
+                    : 'text-gray-500 hover:text-[#FBC49D]'
                     }`}
                 >
                   {link.name}
                   {location.pathname === link.path && (
                     <motion.div
                       layoutId="activeNav"
-                      className="absolute -bottom-1 left-0 right-0 h-0.5 bg-[#FCCEE8]/30"
+                      className="absolute -bottom-1 left-0 right-0 h-0.5 bg-[#FBC49D]/40"
                     />
                   )}
                 </Link>
@@ -201,8 +204,9 @@ export function Layout() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-16 lg:gap-24">
             {/* Column 1: Brand */}
             <div className="flex flex-col">
-              <Link to="/" className="mb-6">
-                <span className="text-[32px] font-normal leading-[1.2] tracking-[1.5px]" style={{ fontFamily: 'Georgia, serif', color: '#A89080' }}>
+              <Link to="/" className="flex items-center space-x-2 mb-6">
+                <img src="/logo_pufu_new.png" alt="PUFU" className="h-12 w-12 object-contain" />
+                <span className="text-[24px] font-normal leading-tight tracking-[1px]" style={{ fontFamily: 'Georgia, serif', color: '#444' }}>
                   pufu cologne
                 </span>
               </Link>
@@ -212,10 +216,10 @@ export function Layout() {
                 hochwertige Matcha-Getränke und moderne Genussmomente.
               </p>
               <div className="flex items-center space-x-5">
-                <a href="https://instagram.com/pufu.cologne" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#A89080] transition-colors">
+                <a href="https://instagram.com/pufu.cologne" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#FBC49D] transition-colors">
                   <Instagram size={20} />
                 </a>
-                <a href="https://www.tiktok.com/@pufu.cologne" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#A89080] transition-colors">
+                <a href="https://www.tiktok.com/@pufu.cologne" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#FBC49D] transition-colors">
                   <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
                     <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.59-1.01-.01 2.62-.02 5.24-.02 7.86-.02 2.04-.51 4.14-1.8 5.75-1.41 1.77-3.81 2.58-5.98 2.36-2.22-.17-4.33-1.47-5.39-3.41-1.21-2.14-1.14-4.99.21-7.05 1.05-1.66 2.91-2.73 4.87-2.85v4.14c-1.11.12-2.19.74-2.75 1.69-.58 1-.58 2.29-.01 3.29.56.96 1.64 1.57 2.75 1.7 1.1.13 2.24-.26 3.01-1.05.81-.84.99-2.09.98-3.23V0h-.01z"/>
                   </svg>

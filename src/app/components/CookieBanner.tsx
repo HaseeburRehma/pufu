@@ -37,8 +37,8 @@ export function CookieBanner() {
           <div className="bg-white rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.15)] border border-gray-100 overflow-hidden">
             <div className="p-6 sm:p-10 text-center">
               <div className="flex flex-col items-center gap-6">
-                <div className="bg-[#FDF2F8] p-4 rounded-2xl">
-                  <ShieldCheck className="w-8 h-8 text-[#E60076]" />
+                <div className="bg-[#FFF8F1] p-4 rounded-2xl">
+                  <ShieldCheck className="w-8 h-8 text-[#FBC49D]" />
                 </div>
                 
                 <div className="space-y-6 max-w-2xl mx-auto">
@@ -51,7 +51,7 @@ export function CookieBanner() {
                       Wir verwenden auf unserer Website Cookies und ähnliche Technologien und verarbeiten Ihre personenbezogenen Daten (z. B. IP-Adresse), um beispielsweise Inhalte und Werbung zu personalisieren, Medien von Drittanbietern einzubinden oder den Traffic auf unserer Website zu analysieren. Die Datenverarbeitung kann auch durch das Setzen von Cookies erfolgen. Wir geben diese Daten an Dritte weiter, die wir in den Datenschutzeinstellungen benennen.
                     </p>
                     <p>
-                      Die Datenverarbeitung erfolgt entweder auf Grundlage Ihrer Einwilligung oder auf Basis eines berechtigten Interesses, dem Sie in den Datenschutzeinstellungen widersprechen können. Sie haben das Recht, keine Einwilligung zu erteilen sowie Ihre Einwilligung jederzeit zu ändern oder zu widerrufen. Der Widerruf wirkt sofort, berührt jedoch nicht die bereits erfolgte Datenverarbeitung. Weitere Informationen zur Verwendung Ihrer Daten finden Sie in unserer <Link to="/datenschutz" className="text-[#A89080] hover:underline">Datenschutzerklärung</Link>.
+                      Die Datenverarbeitung erfolgt entweder auf Grundlage Ihrer Einwilligung oder auf Basis eines berechtigten Interesses, dem Sie in den Datenschutzeinstellungen widersprechen können. Sie haben das Recht, keine Einwilligung zu erteilen sowie Ihre Einwilligung jederzeit zu ändern oder zu widerrufen. Der Widerruf wirkt sofort, berührt jedoch nicht die bereits erfolgte Datenverarbeitung. Weitere Informationen zur Verwendung Ihrer Daten finden Sie in unserer <Link to="/datenschutz" className="text-[#FBC49D] hover:underline">Datenschutzerklärung</Link>.
                     </p>
                     <p className="text-[13px] italic opacity-80">
                       Du bist unter 16 Jahre alt? Dann kannst du nicht in optionale Dienste einwilligen. Bitte frage deine Eltern oder Erziehungsberechtigten, ob sie diesen Diensten gemeinsam mit dir zustimmen.

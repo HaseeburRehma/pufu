@@ -119,13 +119,16 @@ export function Contact() {
       {/* ══════════════════════════════════════
           HERO
       ══════════════════════════════════════ */}
-      <section style={{ background: 'linear-gradient(135deg,#fce4ef 0%,#fdf0f7 60%,#fce4ef 100%)', padding: '80px 24px 72px', textAlign: 'center' }}>
+      <section style={{ background: 'linear-gradient(135deg,#FFF8F1 0%,#fff 60%,#FFF8F1 100%)', padding: '80px 24px 72px', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-          <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: 'rgba(230,0,118,0.08)', color: '#E60076', fontSize: 13, fontWeight: 500, fontFamily: 'Inter,sans-serif', padding: '7px 16px', borderRadius: 100, marginBottom: 28 }}>
-            ✨ Kontakt
+          {/* badge */}
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: '#f5f5f5', color: '#444', fontSize: 13, fontWeight: 500, fontFamily: 'Inter,sans-serif', padding: '7px 16px', borderRadius: 100, marginBottom: 28 }}>
+            ✨ Wir sind für Sie da
           </div>
-          <h1 style={{ fontFamily: 'Georgia,serif', fontSize: 'clamp(44px,7vw,80px)', fontWeight: 400, lineHeight: 1.05, color: '#111', marginBottom: 20, letterSpacing: '-1px' }}>
-            Lass uns{' '}<span style={{ color: '#FDA5D5' }}>verbinden</span>
+
+          <h1 style={{ fontFamily: 'Georgia,serif', fontSize: 'clamp(38px,7vw,80px)', fontWeight: 400, lineHeight: 1.05, color: '#111', marginBottom: 24, letterSpacing: '-px' }}>
+            Kontaktieren Sie uns{' '}
+            <span style={{ color: '#FBC49D' }}>direkt</span>
           </h1>
           <p style={{ fontFamily: 'Inter,sans-serif', fontSize: 'clamp(15px,2vw,18px)', color: '#6B7280', lineHeight: 1.7, maxWidth: 560, margin: '0 auto' }}>
             Wir freuen uns auf deine Nachricht. Ob Frage, Feedback oder Anfrage –
@@ -142,12 +145,12 @@ export function Contact() {
           {contactMethods.map((c, i) => (
             <motion.div key={c.title} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}
               style={{ background: '#FAFAFA', border: '1px solid #f3f4f6', borderRadius: 20, padding: '40px 28px', textAlign: 'center' }}>
-              <div style={{ width: 56, height: 56, borderRadius: '50%', background: '#FCE8F3', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 20px', color: '#E60076' }}>
+              <div style={{ width: 56, height: 56, borderRadius: '50%', background: '#FFF8F1', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 20px', color: '#FBC49D' }}>
                 {c.icon}
               </div>
               <h3 style={{ fontFamily: 'Georgia,serif', fontSize: 20, fontWeight: 400, color: '#111', marginBottom: 8 }}>{c.title}</h3>
               <p style={{ fontFamily: 'Inter,sans-serif', fontSize: 14, color: '#6B7280', marginBottom: 16, lineHeight: 1.5 }}>{c.info}</p>
-              <a href={c.href} style={{ fontFamily: 'Inter,sans-serif', fontSize: 14, fontWeight: 500, color: '#E60076', textDecoration: 'none' }}>
+              <a href={c.href} style={{ fontFamily: 'Inter,sans-serif', fontSize: 14, fontWeight: 500, color: '#FBC49D', textDecoration: 'none' }}>
                 {c.action} →
               </a>
             </motion.div>
@@ -164,7 +167,7 @@ export function Contact() {
           {/* LEFT – Kontaktformular */}
           <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
             <h2 style={{ fontFamily: 'Georgia,serif', fontSize: 'clamp(26px,3.5vw,38px)', fontWeight: 400, color: '#111', marginBottom: 12 }}>
-              Schreib uns eine <span style={{ color: '#FDA5D5' }}>Nachricht</span>
+              Schreib uns eine <span style={{ color: '#FBC49D' }}>Nachricht</span>
             </h2>
             <p style={{ fontFamily: 'Inter,sans-serif', fontSize: 14, color: '#6B7280', lineHeight: 1.65, marginBottom: 32 }}>
               Du hast eine Frage zu unseren Produkten, Standorten oder deinem Besuch bei PUFU?
@@ -212,8 +215,8 @@ export function Contact() {
 
           {/* RIGHT – Social + FAQ */}
           <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-            <h2 style={{ fontFamily: 'Georgia,serif', fontSize: 'clamp(26px,3.5vw,38px)', fontWeight: 400, color: '#111', marginBottom: 12 }}>
-              Folgt <span style={{ color: '#FDA5D5' }}>uns</span>
+            <h2 style={{ fontFamily: 'Georgia,serif', fontSize: 'clamp(28px,4vw,48px)', fontWeight: 400, color: '#111' }}>
+              PUFU in <span style={{ color: '#FBC49D' }}>Köln</span>
             </h2>
             <p style={{ fontFamily: 'Inter,sans-serif', fontSize: 14, color: '#6B7280', lineHeight: 1.65, marginBottom: 28 }}>
               Folge uns auf Social Media für Updates, besondere Angebote und Einblicke hinter die Kulissen.
@@ -223,7 +226,7 @@ export function Contact() {
             <div style={{ display: 'flex', gap: 12, marginBottom: 40 }}>
               {socialLinks.map(s => (
                 <a key={s.name} href={s.url} target="_blank" rel="noopener noreferrer"
-                  style={{ width: 48, height: 48, borderRadius: '50%', background: '#FCE8F3', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#E60076', textDecoration: 'none' }}>
+                  style={{ width: 48, height: 48, borderRadius: '50%', background: '#FFF8F1', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#FBC49D', textDecoration: 'none' }}>
                   {s.icon}
                 </a>
               ))}
@@ -253,7 +256,7 @@ export function Contact() {
         <div style={{ maxWidth: 1100, margin: '0 auto' }}>
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} style={{ textAlign: 'center', marginBottom: 52 }}>
             <h2 style={{ fontFamily: 'Georgia,serif', fontSize: 'clamp(28px,4vw,48px)', fontWeight: 400, color: '#111', marginBottom: 12 }}>
-              Besuche <span style={{ color: '#FDA5D5' }}>unsere Standorte</span>
+              Besuche <span style={{ color: '#FBC49D' }}>unsere Standorte</span>
             </h2>
             <p style={{ fontFamily: 'Inter,sans-serif', fontSize: 15, color: '#6B7280' }}>
               Besuche PUFU an unseren zwei Standorten in Köln und entdecke japanische Soufflé-Pancakes und Premium Matcha in stilvoller Café-Atmosphäre.
@@ -277,15 +280,15 @@ export function Contact() {
                   <h3 style={{ fontFamily: 'Georgia,serif', fontSize: 22, fontWeight: 400, color: '#111', marginBottom: 16 }}>{loc.name}</h3>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
                     <div style={{ display: 'flex', alignItems: 'flex-start', gap: 10 }}>
-                      <MapPin style={{ width: 16, height: 16, color: '#E60076', flexShrink: 0, marginTop: 2 }} />
+                      <MapPin style={{ width: 16, height: 16, color: '#FBC49D', flexShrink: 0, marginTop: 2 }} />
                       <span style={{ fontFamily: 'Inter,sans-serif', fontSize: 13, color: '#4B5563', lineHeight: 1.5 }}>{loc.address}<br />{loc.city}</span>
                     </div>
                     <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-                      <Phone style={{ width: 16, height: 16, color: '#E60076', flexShrink: 0 }} />
+                      <Phone style={{ width: 16, height: 16, color: '#FBC49D', flexShrink: 0 }} />
                       <span style={{ fontFamily: 'Inter,sans-serif', fontSize: 13, color: '#4B5563' }}>{loc.phone}</span>
                     </div>
                     <div style={{ display: 'flex', alignItems: 'flex-start', gap: 10 }}>
-                      <Clock style={{ width: 16, height: 16, color: '#E60076', flexShrink: 0, marginTop: 2 }} />
+                      <Clock style={{ width: 16, height: 16, color: '#FBC49D', flexShrink: 0, marginTop: 2 }} />
                       <div style={{ fontFamily: 'Inter,sans-serif', fontSize: 13, color: '#4B5563', lineHeight: 1.6 }}>
                         {loc.hours.map((h, idx) => <div key={idx}>{h}</div>)}
                       </div>
@@ -305,7 +308,7 @@ export function Contact() {
       {/* ══════════════════════════════════════
           PINK CTA MIT KUCHEN-ECKEN
       ══════════════════════════════════════ */}
-      <section className="relative overflow-hidden py-20" style={{ background: '#E60076' }}>
+      <section className="relative overflow-hidden py-20" style={{ background: '#444' }}>
 
         <div className="absolute top-0 left-0 pointer-events-none hidden sm:block" style={{ width: 160, zIndex: 2 }}>
           <img src="/b1.png" alt="" className="w-full h-auto block"

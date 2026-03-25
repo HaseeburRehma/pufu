@@ -130,15 +130,15 @@ export function Franchise() {
       {/* ═══════════════════════════════════
           HERO – soft pink, stats row
       ═══════════════════════════════════ */}
-      <section style={{ background: 'linear-gradient(135deg,#fce4ef 0%,#fdf0f7 60%,#fce4ef 100%)', padding: '80px 24px 72px', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
+      <section style={{ background: 'linear-gradient(135deg,#FFF8F1 0%,#fff 60%,#FFF8F1 100%)', padding: '80px 24px 72px', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
         {/* badge */}
-        <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: 'rgba(230,0,118,0.08)', color: '#E60076', fontSize: 13, fontWeight: 500, fontFamily: 'Inter,sans-serif', padding: '7px 16px', borderRadius: 100, marginBottom: 28 }}>
+        <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: '#f5f5f5', color: '#444', fontSize: 13, fontWeight: 500, fontFamily: 'Inter,sans-serif', padding: '7px 16px', borderRadius: 100, marginBottom: 28 }}>
           ✨ Treten Sie unserer Familie bei
         </div>
 
         <h1 style={{ fontFamily: 'Georgia,serif', fontSize: 'clamp(38px,7vw,80px)', fontWeight: 400, lineHeight: 1.05, color: '#111', marginBottom: 24, letterSpacing: '-1px' }}>
           Franchise{' '}
-          <span style={{ color: '#FDA5D5' }}>Möglichkeit</span>
+          <span style={{ color: '#FBC49D' }}>Möglichkeit</span>
         </h1>
 
         <p style={{ fontFamily: 'Inter,sans-serif', fontSize: 'clamp(15px,2vw,18px)', color: '#6B7280', lineHeight: 1.7, maxWidth: 640, margin: '0 auto 56px' }}>
@@ -150,7 +150,7 @@ export function Franchise() {
         <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '32px 64px', maxWidth: 800, margin: '0 auto' }}>
           {stats.map((s) => (
             <div key={s.label} style={{ textAlign: 'center' }}>
-              <div style={{ fontFamily: 'Georgia,serif', fontSize: 'clamp(36px,5vw,56px)', fontWeight: 400, color: '#E60076', lineHeight: 1 }}>{s.value}</div>
+              <div style={{ fontFamily: 'Georgia,serif', fontSize: 'clamp(36px,5vw,56px)', fontWeight: 400, color: '#FBC49D', lineHeight: 1 }}>{s.value}</div>
               <div style={{ fontFamily: 'Inter,sans-serif', fontSize: 14, color: '#9CA3AF', marginTop: 8 }}>{s.label}</div>
             </div>
           ))}
@@ -165,7 +165,7 @@ export function Franchise() {
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <h2 style={{ fontFamily: 'Georgia,serif', fontSize: 'clamp(28px,4vw,48px)', fontWeight: 400, color: '#111', marginBottom: 20 }}>
               Eine Marke mit klarem{' '}
-              <span style={{ color: '#FDA5D5' }}>Konzept</span>
+              <span style={{ color: '#FBC49D' }}>Konzept</span>
             </h2>
             <p style={{ fontFamily: 'Inter,sans-serif', fontSize: 16, color: '#6B7280', lineHeight: 1.75, marginBottom: 16 }}>
               PUFU steht für ein hochwertiges Café- und Dessertkonzept mit Fokus auf japanische Soufflé-Pancakes, Premium Matcha und ein visuell starkes Markenerlebnis.
@@ -184,14 +184,14 @@ export function Franchise() {
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} style={{ textAlign: 'center', marginBottom: 56 }}>
             <h2 style={{ fontFamily: 'Georgia,serif', fontSize: 'clamp(28px,4vw,48px)', fontWeight: 400, color: '#111' }}>
-              Warum <span style={{ color: '#FDA5D5' }}>PUFU</span>
+              Warum <span style={{ color: '#FBC49D' }}>PUFU</span>
             </h2>
           </motion.div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))', gap: 24 }}>
             {benefits.map((b, i) => (
               <motion.div key={b.title} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }}
-                style={{ background: 'linear-gradient(135deg,rgba(252,228,240,0.2),#fff)', border: '1px solid rgba(253,165,213,0.2)', borderRadius: 20, padding: 32 }}>
-                <div style={{ color: '#FDA5D5', marginBottom: 16 }}>{b.icon}</div>
+                style={{ background: 'linear-gradient(135deg,rgba(251,196,157,0.1),#fff)', border: '1px solid rgba(251,196,157,0.15)', borderRadius: 20, padding: 32 }}>
+                <div style={{ color: '#FBC49D', marginBottom: 16 }}>{b.icon}</div>
                 <h3 style={{ fontFamily: 'Inter,sans-serif', fontSize: 16, fontWeight: 600, color: '#111', marginBottom: 10 }}>{b.title}</h3>
                 <p style={{ fontFamily: 'Inter,sans-serif', fontSize: 14, color: '#6B7280', lineHeight: 1.65 }}>{b.description}</p>
               </motion.div>
@@ -207,7 +207,7 @@ export function Franchise() {
         <div style={{ maxWidth: 1200, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(300px,1fr))', gap: 64, alignItems: 'center' }}>
           <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
             <h2 style={{ fontFamily: 'Georgia,serif', fontSize: 'clamp(26px,4vw,44px)', fontWeight: 400, color: '#111', marginBottom: 20 }}>
-              Investitions<span style={{ color: '#FDA5D5' }}>übersicht</span>
+              Investitions<span style={{ color: '#FBC49D' }}>übersicht</span>
             </h2>
             <p style={{ fontFamily: 'Inter,sans-serif', fontSize: 15, color: '#6B7280', lineHeight: 1.75, marginBottom: 32 }}>
               Die genauen wirtschaftlichen Rahmendaten werden im Rahmen des Franchise-Prozesses transparent vorgestellt und individuell nach Standort, Flächengröße und Ausbaukonzept bewertet.
@@ -215,7 +215,7 @@ export function Franchise() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: 16, marginBottom: 32 }}>
               {['Anfangsinvestition', 'Franchise-Gebühr', 'Laufende Lizenzgebühr', 'Marketingbeitrag', 'Wirtschaftlicher Zielhorizont'].map((item) => (
                 <div key={item} style={{ display: 'flex', alignItems: 'flex-start', gap: 12 }}>
-                  <CheckCircle style={{ width: 20, height: 20, color: '#FDA5D5', flexShrink: 0, marginTop: 2 }} />
+                  <CheckCircle style={{ width: 20, height: 20, color: '#FBC49D', flexShrink: 0, marginTop: 2 }} />
                   <div>
                     <div style={{ fontFamily: 'Inter,sans-serif', fontSize: 14, fontWeight: 600, color: '#111', marginBottom: 2 }}>{item}</div>
                     <div style={{ fontFamily: 'Inter,sans-serif', fontSize: 13, color: '#9CA3AF' }}>[Details werden im Gespräch mitgeteilt]</div>
@@ -223,7 +223,7 @@ export function Franchise() {
                 </div>
               ))}
             </div>
-            <div style={{ background: '#FDF2F8', borderRadius: 16, padding: '16px 20px' }}>
+            <div style={{ background: '#FFF8F1', borderRadius: 16, padding: '16px 20px' }}>
               <p style={{ fontFamily: 'Inter,sans-serif', fontSize: 13, color: '#374151' }}>
                 <strong>Hinweis:</strong> Alle Angaben erfolgen standortabhängig und auf Basis der finalen Betriebsstruktur.
               </p>
@@ -249,14 +249,14 @@ export function Franchise() {
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} style={{ textAlign: 'center', marginBottom: 56 }}>
             <h2 style={{ fontFamily: 'Georgia,serif', fontSize: 'clamp(28px,4vw,48px)', fontWeight: 400, color: '#111' }}>
-              Der Weg zur <span style={{ color: '#FDA5D5' }}>Partnerschaft</span>
+              Der Weg zur <span style={{ color: '#FBC49D' }}>Partnerschaft</span>
             </h2>
           </motion.div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))', gap: 24 }}>
             {process.map((s, i) => (
               <motion.div key={s.step} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }}
-                style={{ background: '#fff', border: '1px solid rgba(253,165,213,0.25)', borderRadius: 20, padding: 32 }}>
-                <div style={{ fontFamily: 'Georgia,serif', fontSize: 48, fontWeight: 400, color: '#FDA5D5', lineHeight: 1, marginBottom: 16, opacity: 0.7 }}>{s.step}</div>
+                style={{ background: '#fff', border: '1px solid rgba(251,196,157,0.15)', borderRadius: 20, padding: 32 }}>
+                <div style={{ fontFamily: 'Georgia,serif', fontSize: 48, fontWeight: 400, color: '#FBC49D', lineHeight: 1, marginBottom: 16, opacity: 0.7 }}>{s.step}</div>
                 <h3 style={{ fontFamily: 'Inter,sans-serif', fontSize: 16, fontWeight: 600, color: '#111', marginBottom: 10 }}>{s.title}</h3>
                 <p style={{ fontFamily: 'Inter,sans-serif', fontSize: 14, color: '#6B7280', lineHeight: 1.65 }}>{s.description}</p>
               </motion.div>
@@ -272,7 +272,7 @@ export function Franchise() {
         <div style={{ maxWidth: 760, margin: '0 auto', textAlign: 'center' }}>
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <h2 style={{ fontFamily: 'Georgia,serif', fontSize: 'clamp(28px,4vw,48px)', fontWeight: 400, color: '#111', marginBottom: 24 }}>
-              Wen wir <span style={{ color: '#FDA5D5' }}>suchen</span>
+              Wen wir <span style={{ color: '#FBC49D' }}>suchen</span>
             </h2>
             <p style={{ fontFamily: 'Inter,sans-serif', fontSize: 17, color: '#6B7280', lineHeight: 1.8 }}>
               Wir suchen Partnerinnen und Partner mit unternehmerischem Denken, Qualitätsbewusstsein und dem Anspruch, ein Premium-Konzept professionell umzusetzen. Erfahrung in Gastronomie, Retail oder Standortentwicklung ist von Vorteil, aber nicht in jedem Fall Voraussetzung. Entscheidend sind Markenverständnis, Verlässlichkeit und langfristiges Engagement.
@@ -286,7 +286,7 @@ export function Franchise() {
       ═══════════════════════════════════ */}
       <section
         id="franchise-form"
-        style={{ background: '#E60076', padding: '80px 24px', position: 'relative', overflow: 'hidden' }}
+        style={{ background: '#444', padding: '80px 24px', position: 'relative', overflow: 'hidden' }}
       >
         {/* Top-right cake image */}
         <div style={{ position: 'absolute', top: 0, right: 0, width: 'clamp(80px,12vw,160px)', zIndex: 2, pointerEvents: 'none' }}>
@@ -303,7 +303,7 @@ export function Franchise() {
           <div style={{ textAlign: 'center', marginBottom: 48 }}>
             <h2 style={{ fontFamily: 'Georgia,serif', fontSize: 'clamp(32px,5vw,60px)', fontWeight: 400, color: '#fff', marginBottom: 16, lineHeight: 1.1 }}>
               Starten Sie Ihre{' '}
-              <span style={{ color: '#FDA5D5' }}>Reise</span>
+              <span style={{ color: '#FBC49D' }}>Reise</span>
             </h2>
             <p style={{ fontFamily: 'Inter,sans-serif', fontSize: 16, color: 'rgba(255,255,255,0.80)', lineHeight: 1.6 }}>
               Füllen Sie das Formular aus und unser Franchise-Team meldet sich innerhalb von 24 Stunden bei Ihnen.
