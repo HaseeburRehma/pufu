@@ -21,10 +21,14 @@ export function Menu() {
     { id: 'all', name: 'Alle' },
     { id: 'pancakes', name: 'Souffle Pancakes' },
     { id: 'drinks', name: 'Getränke' },
-
   ];
 
-  const menuItems: MenuItem[] = [    // --- PANCAKES ---
+  const menuItems: MenuItem[] = [
+    // ─────────────────────────────────────────────
+    // SOUFFLE PANCAKES  (sorted low → high price)
+    // ─────────────────────────────────────────────
+
+    // €8.50
     {
       id: 1,
       name: 'PUFU Lotus',
@@ -35,6 +39,8 @@ export function Menu() {
       bg: '#FEF3E2',
       isPopular: true,
     },
+
+    // €8.90
     {
       id: 2,
       name: 'PUFU Choc',
@@ -45,38 +51,42 @@ export function Menu() {
       bg: '#FEF3E2',
     },
 
+    // €9.90
     {
       id: 3,
       name: 'PUFU Yuzu Lemon',
-      description: 'mit Yuzucreme, Mandelblätter & Zitronenzeste',
+      description: 'mit Yuzucreme, Mandelblättern & Zitronenzeste',
       price: '€9.90',
       image: '/pancake3.PNG',
       category: 'pancakes',
       bg: '#FCE8E8',
     },
-    {
-      id: 4,
-      name: 'PUFU Raffaello',
-      description: 'mit weißer Schoko & Kokosraspeln',
-      price: '€10.90',
-      image: '/Menu (12).png',
-      category: 'pancakes',
-      bg: '#FEF3E2',
-    },
+
+    // €10.50
     {
       id: 5,
       name: 'PUFU Vanille',
-      description: 'mit Vanillesoße, Sahne & Lotuscrumbles',
+      description: 'mit Vanillesoße, Sahne & Lotus Crumbles',
       price: '€10.50',
       image: '/Menu (9).png',
       category: 'pancakes',
       bg: '#FEF9E2',
     },
 
+    // €10.90 group
+    {
+      id: 4,
+      name: 'PUFU Raffaello',
+      description: 'mit weißer Schokolade & Kokosraspeln',
+      price: '€10.90',
+      image: '/Menu (12).png',
+      category: 'pancakes',
+      bg: '#FEF3E2',
+    },
     {
       id: 6,
       name: 'PUFU Applecrumble',
-      description: 'mit Apfelmus, Butterkekscrumble & Zimt',
+      description: 'mit Apfelmus, Honig-Butterkeks Crumbles & Zimt',
       price: '€10.90',
       image: '/featured2.png',
       category: 'pancakes',
@@ -94,7 +104,7 @@ export function Menu() {
     {
       id: 8,
       name: 'PUFU Cherry',
-      description: 'mit heißen Kirschen & Vanillesoße',
+      description: 'mit Vanillesoße & heißen Kirschen',
       price: '€10.90',
       image: '/Menu (5).png',
       category: 'pancakes',
@@ -109,10 +119,12 @@ export function Menu() {
       category: 'pancakes',
       bg: '#FCE8E8',
     },
+
+    // €11.90 group
     {
       id: 10,
       name: 'PUFU Pistazie',
-      description: 'mit Pistaziencreme, weißen Schokoraspeln & Pistazien',
+      description: 'mit Pistaziencreme, weißen Schokoraspeln & Pistazienkernen',
       price: '€11.90',
       image: '/Menu (1).png',
       category: 'pancakes',
@@ -122,7 +134,7 @@ export function Menu() {
     {
       id: 11,
       name: 'PUFU Mango',
-      description: 'mit Mangocreme, Minze & Kokosraspeln',
+      description: 'mit Mangocreme & Kokosraspeln',
       price: '€11.90',
       image: '/mango.PNG',
       category: 'pancakes',
@@ -132,7 +144,7 @@ export function Menu() {
     {
       id: 12,
       name: 'PUFU Bueno',
-      description: 'mit Haselnusscreme, Schoko & Krokant',
+      description: 'mit Haselnusscreme, Schokolinien & Krokant',
       price: '€11.90',
       image: '/Menu (16).png',
       category: 'pancakes',
@@ -142,19 +154,72 @@ export function Menu() {
     {
       id: 13,
       name: 'PUFU Matcha',
-      description: 'mit Matchacreme, weißer Schoko & Schokoraspeln',
+      description: 'mit Matchacreme & weißen Schokolinien',
       price: '€11.90',
       image: '/Menu.png',
       category: 'pancakes',
       bg: '#E8F5E2',
     },
 
+    // ─────────────────────────────────────────────
+    // GETRÄNKE  (sorted low → high price)
+    // ─────────────────────────────────────────────
 
-    // --- DRINKS ---
+    // €3.90 – Tees
+    {
+      id: 28,
+      name: 'Pink Iced Tea',
+      description: 'Pfanner Wassermelone Ice Tea mit Wildberry & Minze',
+      price: '€3.90',
+      image: '/Menu (19).png',
+      category: 'drinks',
+      bg: '#FDF2F8',
+    },
+    {
+      id: 29,
+      name: 'Frischer Minztee',
+      description: 'Frische Minzstängel mit heißem Wasser & Honig',
+      price: '€3.90',
+      image: '/Menu (2).png',
+      category: 'drinks',
+      bg: '#E8F5E2',
+    },
+
+    // €4.90 – Mocktails
+    {
+      id: 25,
+      name: 'Yuzu Lime Sparkle',
+      description: 'Mizu Mocktail mit Yuzu Sirup & Holunder, Wildberry & Sprudelwasser',
+      price: '€4.90',
+      image: '/Menu (10).png',
+      category: 'drinks',
+      bg: '#E8F5E2',
+    },
+    {
+      id: 26,
+      name: 'Raspberry Dream',
+      description: 'Mizu Mocktail mit Himbeerpüree & Himbeersirup, Wildberry & Sprudelwasser',
+      price: '€4.90',
+      image: '/2.png',
+      category: 'drinks',
+      bg: '#FDF2F8',
+    },
+    {
+      id: 27,
+      name: 'Mango Glow',
+      description: 'Mizu Mocktail mit Mangopüree & Pfirsich-Maracuja, Wildberry & Sprudelwasser',
+      price: '€4.90',
+      image: '/3.png',
+      category: 'drinks',
+      bg: '#FEF3E2',
+      isNew: true,
+    },
+
+    // €6.30 – Ice Matcha Lattes
     {
       id: 14,
       name: 'Vanilla Matcha Latte',
-      description: 'Premium Matcha mit feiner Vanille & frischer Milch',
+      description: 'Premium Matcha mit Vanille Sirup & frischer Milch',
       price: '€6.30',
       image: '/image00001.png',
       category: 'drinks',
@@ -163,7 +228,7 @@ export function Menu() {
     {
       id: 15,
       name: 'Strawberry Matcha Latte',
-      description: 'Premium Matcha mit fruchtiger Erdbeere & frischer Milch',
+      description: 'Premium Matcha mit Erdbeeren Sirup & frischer Milch',
       price: '€6.30',
       image: '/image00002.png',
       category: 'drinks',
@@ -173,7 +238,7 @@ export function Menu() {
     {
       id: 16,
       name: 'Raspberry Matcha Latte',
-      description: 'Premium Matcha mit Himbeere & frischer Milch',
+      description: 'Premium Matcha mit Himbeeren Sirup & frischer Milch',
       price: '€6.30',
       image: '/image00003.png',
       category: 'drinks',
@@ -182,7 +247,7 @@ export function Menu() {
     {
       id: 17,
       name: 'Mango Matcha Latte',
-      description: 'Premium Matcha mit exotischer Mango & frischer Milch',
+      description: 'Premium Matcha mit Mango Sirup & frischer Milch',
       price: '€6.30',
       image: '/image00004.png',
       category: 'drinks',
@@ -191,7 +256,7 @@ export function Menu() {
     {
       id: 18,
       name: 'Banana Matcha Latte',
-      description: 'Premium Matcha mit Banane & frischer Milch',
+      description: 'Premium Matcha mit Cherry Sirup & frischer Milch',
       price: '€6.30',
       image: '/image00005.png',
       category: 'drinks',
@@ -209,7 +274,7 @@ export function Menu() {
     {
       id: 20,
       name: 'Blueberry Matcha Latte',
-      description: 'Premium Matcha mit Heidelbeere & frischer Milch',
+      description: 'Premium Matcha mit Blaubeere Sirup & frischer Milch',
       price: '€6.30',
       image: '/image00007.png',
       category: 'drinks',
@@ -218,7 +283,7 @@ export function Menu() {
     {
       id: 21,
       name: 'Coco Matcha Latte',
-      description: 'Premium Matcha mit Kokos & frischer Milch',
+      description: 'Premium Matcha mit Kokosnuss Sirup & frischer Milch',
       price: '€6.30',
       image: '/image00008.png',
       category: 'drinks',
@@ -227,7 +292,7 @@ export function Menu() {
     {
       id: 22,
       name: 'Yuzu Matcha Latte',
-      description: 'Premium Matcha mit frischer Yuzu & frischer Milch',
+      description: 'Premium Matcha mit Yuzu Sirup & frischer Milch',
       price: '€6.30',
       image: '/image00009.png',
       category: 'drinks',
@@ -236,7 +301,7 @@ export function Menu() {
     {
       id: 23,
       name: 'Pitaya Matcha Latte',
-      description: 'Premium Matcha mit Drachenfrucht & frischer Milch',
+      description: 'Premium Matcha mit Pitaya Sirup & frischer Milch',
       price: '€6.30',
       image: '/image00010.png',
       category: 'drinks',
@@ -246,60 +311,13 @@ export function Menu() {
     {
       id: 24,
       name: 'Pistachio Matcha Latte',
-      description: 'Premium Matcha mit Pistazie & frischer Milch',
+      description: 'Premium Matcha mit Pistazien Sirup & frischer Milch',
       price: '€6.30',
       image: '/Menu (3).png',
       category: 'drinks',
       bg: '#E8F5E2',
       isPopular: true,
     },
-    {
-      id: 25,
-      name: 'Yuzu Lime Sparkle',
-      description: 'Erfrischender Mizu Mocktail mit Yuzu & Limette',
-      price: '€4.90',
-      image: '/Menu (10).png',
-      category: 'drinks',
-      bg: '#E8F5E2',
-    },
-    {
-      id: 26,
-      name: 'Raspberry Dream',
-      description: 'Erfrischender Mizu Mocktail mit Himbeere',
-      price: '€4.90',
-      image: '/2.png',
-      category: 'drinks',
-      bg: '#FDF2F8',
-    },
-    {
-      id: 27,
-      name: 'Mango Glow',
-      description: 'Erfrischender Mizu Mocktail mit Mango',
-      price: '€4.90',
-      image: '/3.png',
-      category: 'drinks',
-      bg: '#FEF3E2',
-      isNew: true,
-    },
-    {
-      id: 28,
-      name: 'Pink Iced Tea',
-      description: 'Koffeinfreier Eistee mit Wildbeere & Wassermelone',
-      price: '€3.90',
-      image: '/Menu (19).png',
-      category: 'drinks',
-      bg: '#FDF2F8',
-    },
-    {
-      id: 29,
-      name: 'Frischer Minztee',
-      description: 'Frischer Minztee mit Honig',
-      price: '€3.90',
-      image: '/Menu (2).png',
-      category: 'drinks',
-      bg: '#E8F5E2',
-    },
-
   ];
 
   const filteredItems =
@@ -483,8 +501,6 @@ export function Menu() {
           </div>
         </div>
       </section>
-
-
 
       {/* ═══════════════════════════════════════
           BOTTOM CTA
