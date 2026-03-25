@@ -20,7 +20,9 @@ export function Menu() {
   const categories = [
     { id: 'all', name: 'Alle' },
     { id: 'pancakes', name: 'Souffle Pancakes' },
-    { id: 'drinks', name: 'Getränke' },
+    { id: 'matcha', name: 'Ice Matcha Latte' },
+    { id: 'mocktails', name: 'Mocktails' },
+    { id: 'teas', name: 'Tees' },
   ];
 
   const menuItems: MenuItem[] = [
@@ -162,67 +164,15 @@ export function Menu() {
     },
 
     // ─────────────────────────────────────────────
-    // GETRÄNKE  (sorted low → high price)
+    // ICE MATCHA LATTE
     // ─────────────────────────────────────────────
-
-    // €3.90 – Tees
-    {
-      id: 28,
-      name: 'Pink Iced Tea',
-      description: 'Pfanner Wassermelone Ice Tea mit Wildberry & Minze',
-      price: '€3.90',
-      image: '/Menu (19).png',
-      category: 'drinks',
-      bg: '#FFF8F1',
-    },
-    {
-      id: 29,
-      name: 'Frischer Minztee',
-      description: 'Frische Minzstängel mit heißem Wasser & Honig',
-      price: '€3.90',
-      image: '/Menu (2).png',
-      category: 'drinks',
-      bg: '#E8F5E2',
-    },
-
-    // €4.90 – Mocktails
-    {
-      id: 25,
-      name: 'Yuzu Lime Sparkle',
-      description: 'Mizu Mocktail mit Yuzu Sirup & Holunder, Wildberry & Sprudelwasser',
-      price: '€4.90',
-      image: '/Menu (10).png',
-      category: 'drinks',
-      bg: '#E8F5E2',
-    },
-    {
-      id: 26,
-      name: 'Raspberry Dream',
-      description: 'Mizu Mocktail mit Himbeerpüree & Himbeersirup, Wildberry & Sprudelwasser',
-      price: '€4.90',
-      image: '/2.png',
-      category: 'drinks',
-      bg: '#FFF8F1',
-    },
-    {
-      id: 27,
-      name: 'Mango Glow',
-      description: 'Mizu Mocktail mit Mangopüree & Pfirsich-Maracuja, Wildberry & Sprudelwasser',
-      price: '€4.90',
-      image: '/3.png',
-      category: 'drinks',
-      bg: '#FEF3E2',
-      isNew: true,
-    },
-
-    // €6.30 – Ice Matcha Lattes
     {
       id: 14,
       name: 'Vanilla Matcha Latte',
       description: 'Premium Matcha mit Vanille Sirup & frischer Milch',
       price: '€6.30',
       image: '/image00001.png',
-      category: 'drinks',
+      category: 'matcha',
       bg: '#E8F5E2',
     },
     {
@@ -231,7 +181,7 @@ export function Menu() {
       description: 'Premium Matcha mit Erdbeeren Sirup & frischer Milch',
       price: '€6.30',
       image: '/image00002.png',
-      category: 'drinks',
+      category: 'matcha',
       bg: '#FFF8F1',
       isPopular: true,
     },
@@ -241,7 +191,7 @@ export function Menu() {
       description: 'Premium Matcha mit Himbeeren Sirup & frischer Milch',
       price: '€6.30',
       image: '/image00003.png',
-      category: 'drinks',
+      category: 'matcha',
       bg: '#FFF8F1',
     },
     {
@@ -250,7 +200,7 @@ export function Menu() {
       description: 'Premium Matcha mit Mango Sirup & frischer Milch',
       price: '€6.30',
       image: '/image00004.png',
-      category: 'drinks',
+      category: 'matcha',
       bg: '#FEF3E2',
     },
     {
@@ -259,7 +209,7 @@ export function Menu() {
       description: 'Premium Matcha mit Cherry Sirup & frischer Milch',
       price: '€6.30',
       image: '/image00005.png',
-      category: 'drinks',
+      category: 'matcha',
       bg: '#FEF3E2',
     },
     {
@@ -268,7 +218,7 @@ export function Menu() {
       description: 'Premium Matcha mit Kirsche & frischer Milch',
       price: '€6.30',
       image: '/image00006.png',
-      category: 'drinks',
+      category: 'matcha',
       bg: '#FEF3E2',
     },
     {
@@ -277,7 +227,7 @@ export function Menu() {
       description: 'Premium Matcha mit Blaubeere Sirup & frischer Milch',
       price: '€6.30',
       image: '/image00007.png',
-      category: 'drinks',
+      category: 'matcha',
       bg: '#FFF8F1',
     },
     {
@@ -286,7 +236,7 @@ export function Menu() {
       description: 'Premium Matcha mit Kokosnuss Sirup & frischer Milch',
       price: '€6.30',
       image: '/image00008.png',
-      category: 'drinks',
+      category: 'matcha',
       bg: '#FEF3E2',
     },
     {
@@ -295,7 +245,7 @@ export function Menu() {
       description: 'Premium Matcha mit Yuzu Sirup & frischer Milch',
       price: '€6.30',
       image: '/image00009.png',
-      category: 'drinks',
+      category: 'matcha',
       bg: '#FEF3E2',
     },
     {
@@ -304,7 +254,7 @@ export function Menu() {
       description: 'Premium Matcha mit Pitaya Sirup & frischer Milch',
       price: '€6.30',
       image: '/image00010.png',
-      category: 'drinks',
+      category: 'matcha',
       bg: '#FFF8F1',
       isNew: true,
     },
@@ -314,9 +264,63 @@ export function Menu() {
       description: 'Premium Matcha mit Pistazien Sirup & frischer Milch',
       price: '€6.30',
       image: '/Menu (3).png',
-      category: 'drinks',
+      category: 'matcha',
       bg: '#E8F5E2',
       isPopular: true,
+    },
+
+    // ─────────────────────────────────────────────
+    // MOCKTAILS
+    // ─────────────────────────────────────────────
+    {
+      id: 25,
+      name: 'Yuzu Lime Sparkle',
+      description: 'Yuzu Sirup & Holunder Sirup, Minze-Extrakt, Wildberry & Sprudelwasser',
+      price: '€4.90',
+      image: '/Menu (10).png',
+      category: 'mocktails',
+      bg: '#E8F5E2',
+    },
+    {
+      id: 26,
+      name: 'Raspberry Dream',
+      description: 'Himbeerpüree & Himbeer Sirup, Minze-Extrakt, Wildberry & Sprudelwasser',
+      price: '€4.90',
+      image: '/2.png',
+      category: 'mocktails',
+      bg: '#FFF8F1',
+    },
+    {
+      id: 27,
+      name: 'Mango Glow',
+      description: 'Mangopüree & Pfirsich-Maracuja Sirup, Minze-Extrakt, Wildberry & Sprudelwasser',
+      price: '€4.90',
+      image: '/3.png',
+      category: 'mocktails',
+      bg: '#FEF3E2',
+      isNew: true,
+    },
+
+    // ─────────────────────────────────────────────
+    // TEES
+    // ─────────────────────────────────────────────
+    {
+      id: 28,
+      name: 'Pink Iced Tea',
+      description: 'Pfanner Wassermelone Ice Tea & Wildberry, garniert mit frischem Minzblatt',
+      price: '€3.90',
+      image: '/Menu (19).png',
+      category: 'teas',
+      bg: '#FFF8F1',
+    },
+    {
+      id: 29,
+      name: 'Frischer Minztee',
+      description: 'Frische Minzstängel mit heißem Wasser & Honig',
+      price: '€3.90',
+      image: '/Menu (2).png',
+      category: 'teas',
+      bg: '#E8F5E2',
     },
   ];
 
@@ -526,4 +530,4 @@ export function Menu() {
 
     </div>
   );
-}
+} 

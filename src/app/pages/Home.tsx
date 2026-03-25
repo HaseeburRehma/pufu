@@ -466,11 +466,11 @@ export function Home() {
           >
             <a
               href="https://www.google.com/maps/place/PUFU/@50.9439811,6.9137843,13z/data=!4m12!1m2!2m1!1spufu!3m8!1s0x47bf25d3d26e3dbd:0x80960f5d81be9d56!8m2!3d50.9498431!4d6.9119139!9m1!1b1!15sCgRwdWZ1WgYiBHB1ZnWSARtqYXBhbmVzZV9jb25mZWN0aW9uZXJ5X3Nob3DgAQA!16s%2Fg%2F11lnw29pw7?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full border-2 border-[#FBC49D]/30 text-[#444] font-medium hover:bg-[#FFF8F1] transition-all"
-                style={{ fontFamily: 'Inter, sans-serif' }}
-              >
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full border-2 border-[#FBC49D]/30 text-[#444] font-medium hover:bg-[#FFF8F1] transition-all"
+              style={{ fontFamily: 'Inter, sans-serif' }}
+            >
               Alle Bewertungen auf Google ansehen <ArrowRight className="w-4 h-4" />
             </a>
           </motion.div>
@@ -483,7 +483,7 @@ export function Home() {
       ═══════════════════════════════════════════ */}
       <section
         className="relative overflow-hidden py-20"
-        style={{ background: '#444' }}
+        style={{ background: '#FBC49D' }}
       >
         {/* ── Corner cake images ── */}
 
@@ -523,14 +523,14 @@ export function Home() {
         {/* ── Content ── */}
         <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2
-            className="font-light tracking-tight mb-6 text-white"
+            className="font-light tracking-tight mb-6 text-black"
             style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(32px, 5vw, 56px)', lineHeight: 1.1 }}
           >
             Besuche PUFU in Köln
           </h2>
           <p
             className="mb-10 mx-auto leading-relaxed"
-            style={{ color: 'rgba(255,255,255,0.88)', fontFamily: 'Inter, sans-serif', fontSize: 16, maxWidth: 640 }}
+            style={{ color: 'rgba(0, 0, 0, 0.88)', fontFamily: 'Inter, sans-serif', fontSize: 16, maxWidth: 640 }}
           >
             Erlebe japanische Soufflé-Pancakes und Premium Matcha an unseren Standorten in Köln. Ideal für
             Dessert-Liebhaber, Matcha-Fans und alle, die Genuss in stilvoller Atmosphäre suchen.
@@ -540,8 +540,8 @@ export function Home() {
               to="/kontakt"
               className="inline-flex items-center justify-center rounded-full font-medium transition-all hover:scale-105"
               style={{
-                background: '#fff',
-                color: '#111',
+                background: '#000',
+                color: '#fff',
                 padding: '14px 36px',
                 fontFamily: 'Inter, sans-serif',
                 fontSize: 15,
@@ -556,12 +556,12 @@ export function Home() {
               className="inline-flex items-center justify-center rounded-full font-medium transition-all hover:bg-white hover:text-gray-900"
               style={{
                 background: 'transparent',
-                color: '#fff',
+                color: '#000',
                 padding: '14px 36px',
                 fontFamily: 'Inter, sans-serif',
                 fontSize: 15,
                 textDecoration: 'none',
-                border: '2px solid #fff',
+                border: '2px solid #000',
               }}
             >
               Menü entdecken

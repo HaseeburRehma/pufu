@@ -308,7 +308,7 @@ export function Contact() {
       {/* ══════════════════════════════════════
           PINK CTA MIT KUCHEN-ECKEN
       ══════════════════════════════════════ */}
-      <section className="relative overflow-hidden py-20" style={{ background: '#444' }}>
+      <section className="relative overflow-hidden py-20" style={{ background: '#FBC49D' }}>
 
         <div className="absolute top-0 left-0 pointer-events-none hidden sm:block" style={{ width: 160, zIndex: 2 }}>
           <img src="/b1.png" alt="" className="w-full h-auto block"
@@ -326,12 +326,12 @@ export function Contact() {
         </div>
 
         <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-light tracking-tight mb-6 text-white"
+          <h2 className="font-light tracking-tight mb-6 text-black"
             style={{ fontFamily: 'Georgia,serif', fontSize: 'clamp(32px,5vw,56px)', lineHeight: 1.1 }}>
             Bereit für deinen PUFU-Moment?
           </h2>
           <p className="mb-8 mx-auto leading-relaxed"
-            style={{ color: 'rgba(255,255,255,0.88)', fontFamily: 'Inter,sans-serif', fontSize: 16, maxWidth: 560 }}>
+            style={{ color: 'rgba(0, 0, 0, 0.88)', fontFamily: 'Inter,sans-serif', fontSize: 16, maxWidth: 560 }}>
             Erlebe japanische Soufflé-Pancakes und Premium Matcha an unseren Standorten in Köln.
             Ideal für Dessert-Liebhaber, Matcha-Fans und alle, die Genuss in stilvoller Atmosphäre suchen.
           </p>
@@ -340,12 +340,12 @@ export function Contact() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/kontakt"
               className="inline-flex items-center justify-center rounded-full font-medium transition-all hover:scale-105"
-              style={{ background: '#fff', color: '#111', padding: '14px 36px', fontFamily: 'Inter,sans-serif', fontSize: 15, textDecoration: 'none' }}>
+              style={{ background: '#000000', color: '#fff', padding: '14px 36px', fontFamily: 'Inter,sans-serif', fontSize: 15, textDecoration: 'none' }}>
               Standorte ansehen
             </Link>
             <Link to="/menu"
               className="inline-flex items-center justify-center rounded-full font-medium transition-all hover:bg-white hover:text-gray-900"
-              style={{ background: 'transparent', color: '#fff', padding: '14px 36px', fontFamily: 'Inter,sans-serif', fontSize: 15, textDecoration: 'none', border: '2px solid #fff' }}>
+              style={{ background: 'transparent', color: '#000', padding: '14px 36px', fontFamily: 'Inter,sans-serif', fontSize: 15, textDecoration: 'none', border: '2px solid #000' }}>
               Menü entdecken
             </Link>
           </div>

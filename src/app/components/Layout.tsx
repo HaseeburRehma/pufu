@@ -122,7 +122,7 @@ export function Layout() {
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
             <Link to="/" className="flex items-center">
-              <img src="/logo_pufu_new.png" alt="PUFU Cologne" className="h-14 w-14 object-contain" />
+              <img src="/logopufu.jpg" alt="PUFU Cologne" className="h-14 w-14 object-cover rounded-full" />
               <div className="flex flex-col ml-1">
                 <span className="text-[20px] font-normal leading-tight tracking-[1px]" style={{ fontFamily: 'Georgia, serif', color: '#444' }}>
                   pufu
@@ -205,7 +205,7 @@ export function Layout() {
             {/* Column 1: Brand */}
             <div className="flex flex-col">
               <Link to="/" className="flex items-center space-x-2 mb-6">
-                <img src="/logo_pufu_new.png" alt="PUFU" className="h-12 w-12 object-contain" />
+                <img src="/logopufu.jpg" alt="PUFU" className="h-12 w-12 object-cover rounded-full" />
                 <span className="text-[24px] font-normal leading-tight tracking-[1px]" style={{ fontFamily: 'Georgia, serif', color: '#444' }}>
                   pufu cologne
                 </span>
@@ -221,7 +221,7 @@ export function Layout() {
                 </a>
                 <a href="https://www.tiktok.com/@pufu.cologne" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#FBC49D] transition-colors">
                   <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                    <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.59-1.01-.01 2.62-.02 5.24-.02 7.86-.02 2.04-.51 4.14-1.8 5.75-1.41 1.77-3.81 2.58-5.98 2.36-2.22-.17-4.33-1.47-5.39-3.41-1.21-2.14-1.14-4.99.21-7.05 1.05-1.66 2.91-2.73 4.87-2.85v4.14c-1.11.12-2.19.74-2.75 1.69-.58 1-.58 2.29-.01 3.29.56.96 1.64 1.57 2.75 1.7 1.1.13 2.24-.26 3.01-1.05.81-.84.99-2.09.98-3.23V0h-.01z"/>
+                    <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.59-1.01-.01 2.62-.02 5.24-.02 7.86-.02 2.04-.51 4.14-1.8 5.75-1.41 1.77-3.81 2.58-5.98 2.36-2.22-.17-4.33-1.47-5.39-3.41-1.21-2.14-1.14-4.99.21-7.05 1.05-1.66 2.91-2.73 4.87-2.85v4.14c-1.11.12-2.19.74-2.75 1.69-.58 1-.58 2.29-.01 3.29.56.96 1.64 1.57 2.75 1.7 1.1.13 2.24-.26 3.01-1.05.81-.84.99-2.09.98-3.23V0h-.01z" />
                   </svg>
                 </a>
               </div>

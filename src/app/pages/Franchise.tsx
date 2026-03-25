@@ -286,7 +286,7 @@ export function Franchise() {
       ═══════════════════════════════════ */}
       <section
         id="franchise-form"
-        style={{ background: '#444', padding: '80px 24px', position: 'relative', overflow: 'hidden' }}
+        style={{ background: '#FBC49D', padding: '80px 24px', position: 'relative', overflow: 'hidden' }}
       >
         {/* Top-right cake image */}
         <div style={{ position: 'absolute', top: 0, right: 0, width: 'clamp(80px,12vw,160px)', zIndex: 2, pointerEvents: 'none' }}>
@@ -301,11 +301,11 @@ export function Franchise() {
         <div style={{ maxWidth: 860, margin: '0 auto', position: 'relative', zIndex: 10 }}>
           {/* Heading */}
           <div style={{ textAlign: 'center', marginBottom: 48 }}>
-            <h2 style={{ fontFamily: 'Georgia,serif', fontSize: 'clamp(32px,5vw,60px)', fontWeight: 400, color: '#fff', marginBottom: 16, lineHeight: 1.1 }}>
+            <h2 style={{ fontFamily: 'Georgia,serif', fontSize: 'clamp(32px,5vw,60px)', fontWeight: 400, color: '#000', marginBottom: 16, lineHeight: 1.1 }}>
               Starten Sie Ihre{' '}
               <span style={{ color: '#FBC49D' }}>Reise</span>
             </h2>
-            <p style={{ fontFamily: 'Inter,sans-serif', fontSize: 16, color: 'rgba(255,255,255,0.80)', lineHeight: 1.6 }}>
+            <p style={{ fontFamily: 'Inter,sans-serif', fontSize: 16, color: 'rgba(0, 0, 0, 0.8)', lineHeight: 1.6 }}>
               Füllen Sie das Formular aus und unser Franchise-Team meldet sich innerhalb von 24 Stunden bei Ihnen.
             </p>
           </div>
