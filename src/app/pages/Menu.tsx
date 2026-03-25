@@ -34,7 +34,7 @@ export function Menu() {
     {
       id: 1,
       name: 'PUFU Lotus',
-      description: 'mit Lotuscreme & Lotus Crumbles',
+      description: 'SCHRITT 1: LOTUS CREME , SCHRITT 2: LOTUS CRUMBLES ',
       price: '€8.50',
       image: '/Menu (7).png',
       category: 'pancakes',
@@ -46,7 +46,7 @@ export function Menu() {
     {
       id: 2,
       name: 'PUFU Choc',
-      description: 'mit Nuss-Nougatcreme',
+      description: 'SCHRITT : NUSS-NOUGAT CREME',
       price: '€8.90',
       image: '/Menu (8).png',
       category: 'pancakes',
@@ -57,7 +57,7 @@ export function Menu() {
     {
       id: 3,
       name: 'PUFU Yuzu Lemon',
-      description: 'mit Yuzucreme, Mandelblättern & Zitronenzeste',
+      description: 'SCHRITT 1: YUZU CREME ,SCHRITT 2 : MANDELBLÄTTER, ZITRONENZESTE ',
       price: '€9.90',
       image: '/pancake3.PNG',
       category: 'pancakes',
@@ -68,7 +68,7 @@ export function Menu() {
     {
       id: 5,
       name: 'PUFU Vanille',
-      description: 'mit Vanillesoße, Sahne & Lotus Crumbles',
+      description: 'SCHRITT 1: VANILLE SOßE, SCHRITT 2: SAHNE & LOTUS CRUMBLES',
       price: '€10.50',
       image: '/Menu (9).png',
       category: 'pancakes',
@@ -79,7 +79,7 @@ export function Menu() {
     {
       id: 4,
       name: 'PUFU Raffaello',
-      description: 'mit weißer Schokolade & Kokosraspeln',
+      description: 'SCHRITT 1: WEIßE SCHOKO, SCHRITT 2: KOKOS RASPELN',
       price: '€10.90',
       image: '/Menu (12).png',
       category: 'pancakes',
@@ -88,7 +88,7 @@ export function Menu() {
     {
       id: 6,
       name: 'PUFU Applecrumble',
-      description: 'mit Apfelmus, Honig-Butterkeks Crumbles & Zimt',
+      description: 'SCHRITT 1: APFELMUS , SCHRITT 2: HONBUTTERKEKS CRUMBLES , SCHRITT 3: ZIMT',
       price: '€10.90',
       image: '/featured2.png',
       category: 'pancakes',
@@ -97,7 +97,7 @@ export function Menu() {
     {
       id: 7,
       name: 'PUFU Classic',
-      description: 'mit Puderzucker & Honig',
+      description: 'SCHRITT : PUDERZUCKER STREUEN , SCHRITT 2: HONIG LINIEN',
       price: '€10.90',
       image: '/pancake2.png',
       category: 'pancakes',
@@ -106,7 +106,7 @@ export function Menu() {
     {
       id: 8,
       name: 'PUFU Cherry',
-      description: 'mit Vanillesoße & heißen Kirschen',
+      description: 'SCHRITT : VANILLE SOßE , SCHRITT 2: HEIßE KIRSCHEN',
       price: '€10.90',
       image: '/Menu (5).png',
       category: 'pancakes',
@@ -115,7 +115,7 @@ export function Menu() {
     {
       id: 9,
       name: 'PUFU Pitaya',
-      description: 'mit Drachenfruchtcreme, Chiasamen & Honig',
+      description: 'SCHRITT : DRACHENFRUCHT CREME , SCHRITT 2: CHIASAMEN & HONIG',
       price: '€10.90',
       image: '/menu (22).png',
       category: 'pancakes',
@@ -126,7 +126,7 @@ export function Menu() {
     {
       id: 10,
       name: 'PUFU Pistazie',
-      description: 'mit Pistaziencreme, weißen Schokoraspeln & Pistazienkernen',
+      description: 'SCHRITT : PISTAZIEN CREME, SCHRITT 2: WEIßE SCHOKO RASPELN & PISTAZIENKERNE',
       price: '€11.90',
       image: '/Menu (1).png',
       category: 'pancakes',
@@ -136,7 +136,7 @@ export function Menu() {
     {
       id: 11,
       name: 'PUFU Mango',
-      description: 'mit Mangocreme & Kokosraspeln',
+      description: '1. SCHRITT : MANGO CREME, 2. SCHRITT : KOKOS RASPELN',
       price: '€11.90',
       image: '/mango.PNG',
       category: 'pancakes',
@@ -146,7 +146,7 @@ export function Menu() {
     {
       id: 12,
       name: 'PUFU Bueno',
-      description: 'mit Haselnusscreme, Schokolinien & Krokant',
+      description: '1. SCHRITT : HASELNUSS CREME , 2. SCHRITT : SCHOKO LINIEN , 3. SCHRITT : KROKANT',
       price: '€11.90',
       image: '/Menu (16).png',
       category: 'pancakes',
@@ -156,7 +156,7 @@ export function Menu() {
     {
       id: 13,
       name: 'PUFU Matcha',
-      description: 'mit Matchacreme & weißen Schokolinien',
+      description: '1. SCHRITT : MATCHA CREME , 2. SCHRITT : WEIßE SCHOKO LINIEN',
       price: '€11.90',
       image: '/Menu.png',
       category: 'pancakes',
@@ -169,7 +169,7 @@ export function Menu() {
     {
       id: 14,
       name: 'Vanilla Matcha Latte',
-      description: 'Premium Matcha mit Vanille Sirup & frischer Milch',
+      description: 'Eiswürfel bis zur Hälfte des Bechers füllen, Vanille Sirup – 70 ml, Milch – 230 ml, Matcha – 40 ml, Vorsichtig umrühren',
       price: '€6.30',
       image: '/image00001.png',
       category: 'matcha',
@@ -178,7 +178,7 @@ export function Menu() {
     {
       id: 15,
       name: 'Strawberry Matcha Latte',
-      description: 'Premium Matcha mit Erdbeeren Sirup & frischer Milch',
+      description: 'Eiswürfel bis zur Hälfte des Bechers füllen, Erdbeeren Sirup – 70 ml, Milch – 230 ml, Matcha – 40 ml, Vorsichtig umrühren',
       price: '€6.30',
       image: '/image00002.png',
       category: 'matcha',
@@ -188,7 +188,7 @@ export function Menu() {
     {
       id: 16,
       name: 'Raspberry Matcha Latte',
-      description: 'Premium Matcha mit Himbeeren Sirup & frischer Milch',
+      description: 'Eiswürfel bis zur Hälfte des Bechers füllen, Himbeeren Sirup – 70 ml, Milch – 230 ml, Matcha – 40 ml, Vorsichtig umrühren',
       price: '€6.30',
       image: '/image00003.png',
       category: 'matcha',
@@ -197,7 +197,7 @@ export function Menu() {
     {
       id: 17,
       name: 'Mango Matcha Latte',
-      description: 'Premium Matcha mit Mango Sirup & frischer Milch',
+      description: 'Eiswürfel bis zur Hälfte des Bechers füllen, Mango Sirup – 70 ml, Milch – 230 ml, Matcha – 40 ml, Vorsichtig umrühren',
       price: '€6.30',
       image: '/image00004.png',
       category: 'matcha',
@@ -206,16 +206,16 @@ export function Menu() {
     {
       id: 18,
       name: 'Banana Matcha Latte',
-      description: 'Premium Matcha mit Cherry Sirup & frischer Milch',
+      description: 'Eiswürfel bis zur Hälfte des Bechers füllen, Cherry Sirup – 70 ml, Milch – 230 ml, Matcha – 40 ml, Vorsichtig umrühren',
       price: '€6.30',
       image: '/image00005.png',
       category: 'matcha',
-      bg: '#FEF3E2',
+      bg: '#FEF9E2',
     },
     {
       id: 19,
       name: 'Cherry Matcha Latte',
-      description: 'Premium Matcha mit Kirsche & frischer Milch',
+      description: 'Eiswürfel bis zur Hälfte des Bechers füllen, Cherry Sirup – 70 ml, Milch – 230 ml, Matcha – 40 ml, Vorsichtig umrühren',
       price: '€6.30',
       image: '/image00006.png',
       category: 'matcha',
@@ -224,7 +224,7 @@ export function Menu() {
     {
       id: 20,
       name: 'Blueberry Matcha Latte',
-      description: 'Premium Matcha mit Blaubeere Sirup & frischer Milch',
+      description: 'Eiswürfel bis zur Hälfte des Bechers füllen, Blaubeere Sirup – 70 ml, Milch – 230 ml, Matcha – 40 ml, Vorsichtig umrühren',
       price: '€6.30',
       image: '/image00007.png',
       category: 'matcha',
@@ -233,7 +233,7 @@ export function Menu() {
     {
       id: 21,
       name: 'Coco Matcha Latte',
-      description: 'Premium Matcha mit Kokosnuss Sirup & frischer Milch',
+      description: 'Eiswürfel bis zur Hälfte des Bechers füllen, Kokosnuss Sirup – 70 ml, Milch – 230 ml, Matcha – 40 ml, Vorsichtig umrühren',
       price: '€6.30',
       image: '/image00008.png',
       category: 'matcha',
@@ -242,7 +242,7 @@ export function Menu() {
     {
       id: 22,
       name: 'Yuzu Matcha Latte',
-      description: 'Premium Matcha mit Yuzu Sirup & frischer Milch',
+      description: 'Eiswürfel bis zur Hälfte des Bechers füllen, Yuzu Sirup – 70 ml, Milch – 230 ml, Matcha – 40 ml, Vorsichtig umrühren',
       price: '€6.30',
       image: '/image00009.png',
       category: 'matcha',
@@ -251,7 +251,7 @@ export function Menu() {
     {
       id: 23,
       name: 'Pitaya Matcha Latte',
-      description: 'Premium Matcha mit Pitaya Sirup & frischer Milch',
+      description: 'Eiswürfel bis zur Hälfte des Bechers füllen, Pitaya Sirup – 70 ml, Milch – 230 ml, Matcha – 40 ml, Vorsichtig umrühren',
       price: '€6.30',
       image: '/image00010.png',
       category: 'matcha',
@@ -260,8 +260,8 @@ export function Menu() {
     },
     {
       id: 24,
-      name: 'Pistachio Matcha Latte',
-      description: 'Premium Matcha mit Pistazien Sirup & frischer Milch',
+      name: 'Pistacchio Matcha Latte',
+      description: 'Eiswürfel bis zur Hälfte des Bechers füllen, Pistazien Sirup – 70 ml, Milch – 230 ml, Matcha – 40 ml, Vorsichtig umrühren',
       price: '€6.30',
       image: '/Menu (3).png',
       category: 'matcha',
@@ -275,7 +275,7 @@ export function Menu() {
     {
       id: 25,
       name: 'Yuzu Lime Sparkle',
-      description: 'Yuzu Sirup & Holunder Sirup, Minze-Extrakt, Wildberry & Sprudelwasser',
+      description: 'Mizu Mocktail mit Yuzu Sirup (35ml) & Holunder Sirup (15ml), Minze-Extrakt, Wildberry & Sprudelwasser',
       price: '€4.90',
       image: '/Menu (10).png',
       category: 'mocktails',
@@ -284,7 +284,7 @@ export function Menu() {
     {
       id: 26,
       name: 'Raspberry Dream',
-      description: 'Himbeerpüree & Himbeer Sirup, Minze-Extrakt, Wildberry & Sprudelwasser',
+      description: 'Mizu Mocktail mit Himbeerpüree (35ml) & Himbeer Sirup (15ml), Minze-Extrakt, Wildberry & Sprudelwasser',
       price: '€4.90',
       image: '/2.png',
       category: 'mocktails',
@@ -293,7 +293,7 @@ export function Menu() {
     {
       id: 27,
       name: 'Mango Glow',
-      description: 'Mangopüree & Pfirsich-Maracuja Sirup, Minze-Extrakt, Wildberry & Sprudelwasser',
+      description: 'Mizu Mocktail mit Mangopüree (35ml) & Pfirsich-Maracuja Sirup (15ml), Minze-Extrakt, Wildberry & Sprudelwasser',
       price: '€4.90',
       image: '/3.png',
       category: 'mocktails',
@@ -307,18 +307,18 @@ export function Menu() {
     {
       id: 28,
       name: 'Pink Iced Tea',
-      description: 'Pfanner Wassermelone Ice Tea & Wildberry, garniert mit frischem Minzblatt',
+      description: 'Eiswürfel bis zur Hälfte des Bechers füllen, Pfanner Wassermelone Ice Tea - 150ml, Wildberry - 150ml, Mit frischem Minzblatt garnieren ',
       price: '€3.90',
       image: '/Menu (19).png',
       category: 'teas',
-      bg: '#FFF8F1',
+      bg: '#FCE8E8',
     },
     {
       id: 29,
-      name: 'Frischer Minztee',
-      description: 'Frische Minzstängel mit heißem Wasser & Honig',
+      name: 'Fresh Mint Tea',
+      description: '5 frische Minzstängel in den Becher geben, Mit gekochtem Wasser bis zum Rand auffüllen, Honig – 30 ml hinzufügen, Kurz ziehen lassen & servieren ',
       price: '€3.90',
-      image: '/Menu (2).png',
+      image: '/Menu (18).png',
       category: 'teas',
       bg: '#E8F5E2',
     },
