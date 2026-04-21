@@ -417,7 +417,7 @@ Investment Note:
 Alle Angaben erfolgen standortabhängig und auf Basis der finalen Betriebsstruktur.
 
 Process Section Title:
-Der Weg zur Partnerschaft
+Der Weg zum eigenen Store
 
 Step 1 Title:
 Erstkontakt

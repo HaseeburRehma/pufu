@@ -249,7 +249,7 @@ export function OwnStore() {
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} style={{ textAlign: 'center', marginBottom: 56 }}>
             <h2 style={{ fontFamily: 'Georgia,serif', fontSize: 'clamp(28px,4vw,48px)', fontWeight: 400, color: '#111' }}>
-              Der Weg zur <span style={{ color: '#FBC49D' }}>Partnerschaft</span>
+              Der Weg zum <span style={{ color: '#FBC49D' }}>eigenen Store</span>
             </h2>
           </motion.div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))', gap: 24 }}>
