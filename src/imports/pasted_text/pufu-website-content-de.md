@@ -462,7 +462,7 @@ Ideal Partner Text:
 Wir suchen Partnerinnen und Partner mit unternehmerischem Denken, Qualitätsbewusstsein und dem Anspruch, ein Premium-Konzept professionell umzusetzen. Erfahrung in Gastronomie, Retail oder Standortentwicklung ist von Vorteil, aber nicht in jedem Fall Voraussetzung. Entscheidend sind Markenverständnis, Verlässlichkeit und langfristiges Engagement.
 
 Form Section Title:
-Store-Anfrage
+Jetzt deinen eigenen Store eröffnen
 
 Form Intro:
 Wenn Sie sich für eine Partnerschaft mit PUFU interessieren, freuen wir uns über Ihre Anfrage. Unser Team meldet sich nach Prüfung Ihrer Angaben zeitnah bei Ihnen.

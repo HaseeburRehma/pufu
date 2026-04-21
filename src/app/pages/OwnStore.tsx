@@ -302,8 +302,8 @@ export function OwnStore() {
           {/* Heading */}
           <div style={{ textAlign: 'center', marginBottom: 48 }}>
             <h2 style={{ fontFamily: 'Georgia,serif', fontSize: 'clamp(32px,5vw,60px)', fontWeight: 400, color: '#000', marginBottom: 16, lineHeight: 1.1 }}>
-              Starten Sie Ihre{' '}
-              <span style={{ color: '#FBC49D' }}>Reise</span>
+              Jetzt deinen eigenen{' '}
+              <span style={{ color: '#FBC49D' }}>Store eröffnen</span>
             </h2>
             <p style={{ fontFamily: 'Inter,sans-serif', fontSize: 16, color: 'rgba(0, 0, 0, 0.8)', lineHeight: 1.6 }}>
               Füllen Sie das Formular aus und unser Store-Team meldet sich innerhalb von 24 Stunden bei Ihnen.
