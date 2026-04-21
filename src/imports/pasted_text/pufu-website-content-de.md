@@ -7,7 +7,7 @@ Important instructions:
 - Brand tone: premium, elegant, modern
 - Core positioning: premium matcha & dessert café
 - Audience: dessert lovers in Cologne, young social-media audience, mixed audience
-- Franchise page tone: serious and investor-focused
+- Store page tone: serious and investor-focused
 - Do not invent missing company information.
 - Where business details are not confirmed, keep the placeholders exactly as provided.
 - Page titles in the design can remain in English for section recognition if needed, but all visible website copy should be in German.
@@ -153,7 +153,7 @@ Ein elegantes Dessert-Café für feine Soufflé-Pancakes, hochwertige Matcha-Get
 Footer Quick Links:
 Startseite
 Menü
-Franchise
+Mein eigener Store
 Kontakt
 
 Footer Visit Us Title:
@@ -342,17 +342,17 @@ Bottom CTA Button 2:
 Menü ansehen
 
 ========================
-FRANCHISE PAGE
+OWN STORE PAGE
 ========================
 
 Hero Headline:
-Franchise mit PUFU
+Mein eigener Store mit PUFU
 
 Hero Subheadline:
 Werden Sie Teil einer modernen Premium-Dessertmarke und entwickeln Sie mit PUFU einen Standort, der japanisch inspirierte Dessertkultur, starke Markenästhetik und wachsende Nachfrage miteinander verbindet.
 
 Hero CTA:
-Franchise-Anfrage stellen
+Store-Anfrage stellen
 
 Intro Section Title:
 Eine Marke mit klarem Konzept
@@ -386,7 +386,7 @@ Point 4 Title:
 Operatives Unterstützungspotenzial
 
 Point 4 Text:
-Franchise-Partner profitieren von einem strukturierten Konzeptaufbau, Markenführung und betrieblicher Orientierung.
+Store-Partner profitieren von einem strukturierten Konzeptaufbau, Markenführung und betrieblicher Orientierung.
 
 Point 5 Title:
 Standortrelevantes Format
@@ -404,11 +404,11 @@ Investment Section Title:
 Investitionsübersicht
 
 Investment Intro:
-Die genauen wirtschaftlichen Rahmendaten werden im Rahmen des Franchise-Prozesses transparent vorgestellt und individuell nach Standort, Flächengröße und Ausbaukonzept bewertet.
+Die genauen wirtschaftlichen Rahmendaten werden im Rahmen des Store-Prozesses transparent vorgestellt und individuell nach Standort, Flächengröße und Ausbaukonzept bewertet.
 
 Investment Items:
 Anfangsinvestition: [DETAILS EINFÜGEN]
-Franchise-Gebühr: [DETAILS EINFÜGEN]
+Store-Gebühr: [DETAILS EINFÜGEN]
 Laufende Lizenzgebühr: [DETAILS EINFÜGEN]
 Marketingbeitrag: [DETAILS EINFÜGEN]
 Wirtschaftlicher Zielhorizont: [DETAILS EINFÜGEN]
@@ -441,7 +441,7 @@ Step 4 Title:
 Wirtschaftliche Bewertung
 
 Step 4 Text:
-Sie erhalten Einblick in die wesentlichen betriebswirtschaftlichen Rahmenbedingungen und die Struktur des Franchise-Modells.
+Sie erhalten Einblick in die wesentlichen betriebswirtschaftlichen Rahmenbedingungen und die Struktur des Store-Modells.
 
 Step 5 Title:
 Vorbereitung & Umsetzung
@@ -462,7 +462,7 @@ Ideal Partner Text:
 Wir suchen Partnerinnen und Partner mit unternehmerischem Denken, Qualitätsbewusstsein und dem Anspruch, ein Premium-Konzept professionell umzusetzen. Erfahrung in Gastronomie, Retail oder Standortentwicklung ist von Vorteil, aber nicht in jedem Fall Voraussetzung. Entscheidend sind Markenverständnis, Verlässlichkeit und langfristiges Engagement.
 
 Form Section Title:
-Franchise-Anfrage
+Store-Anfrage
 
 Form Intro:
 Wenn Sie sich für eine Partnerschaft mit PUFU interessieren, freuen wir uns über Ihre Anfrage. Unser Team meldet sich nach Prüfung Ihrer Angaben zeitnah bei Ihnen.
@@ -477,7 +477,7 @@ Investitionsrahmen
 Zusätzliche Informationen
 
 Textarea Placeholder:
-Beschreiben Sie kurz Ihr Interesse an einer Franchise-Partnerschaft mit PUFU.
+Beschreiben Sie kurz Ihr Interesse am Betrieb eines eigenen PUFU Stores.
 
 Submit Button:
 Anfrage absenden

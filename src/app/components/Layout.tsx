@@ -106,7 +106,7 @@ export function Layout() {
   const navLinks = [
     { name: 'Pufu', path: '/' },
     { name: 'Menü', path: '/menu' },
-    { name: 'Franchise', path: '/franchise' },
+    { name: 'Mein eigener Store', path: '/mein-eigener-store' },
     { name: 'Kontakt', path: '/kontakt' },
   ];
 
@@ -235,7 +235,7 @@ export function Layout() {
               <ul className="space-y-4">
                 <li><Link to="/" className="text-gray-500 hover:text-gray-900 text-[15px] transition-colors">Startseite</Link></li>
                 <li><Link to="/menu" className="text-gray-500 hover:text-gray-900 text-[15px] transition-colors">Menü</Link></li>
-                <li><Link to="/franchise" className="text-gray-500 hover:text-gray-900 text-[15px] transition-colors">Franchise</Link></li>
+                <li><Link to="/mein-eigener-store" className="text-gray-500 hover:text-gray-900 text-[15px] transition-colors">Mein eigener Store</Link></li>
                 <li><Link to="/kontakt" className="text-gray-500 hover:text-gray-900 text-[15px] transition-colors">Kontakt</Link></li>
               </ul>
             </div>

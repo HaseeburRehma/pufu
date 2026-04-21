@@ -12,7 +12,7 @@ import {
 } from 'lucide-react';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 
-export function Franchise() {
+export function OwnStore() {
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
@@ -34,7 +34,7 @@ export function Franchise() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           ...formData,
-          _subject: `Neue Franchise-Anfrage von ${formData.fullName}`,
+          _subject: `Neue Store-Anfrage von ${formData.fullName}`,
           _template: 'table'
         }),
       });
@@ -79,7 +79,7 @@ export function Franchise() {
     {
       icon: <BookOpen className="w-8 h-8" />,
       title: 'Operatives Unterstützungspotenzial',
-      description: 'Franchise-Partner profitieren von einem strukturierten Konzeptaufbau, Markenführung und betrieblicher Orientierung.',
+      description: 'Store-Partner profitieren von einem strukturierten Konzeptaufbau, Markenführung und betrieblicher Orientierung.',
     },
     {
       icon: <Target className="w-8 h-8" />,
@@ -97,7 +97,7 @@ export function Franchise() {
     { step: '01', title: 'Erstkontakt', description: 'Sie übermitteln Ihre Anfrage und erhalten erste Informationen zum Konzept und zu den Anforderungen.' },
     { step: '02', title: 'Kennenlerngespräch', description: 'In einem ersten Gespräch besprechen wir Ihre Ziele, Ihren Hintergrund und das Potenzial einer Zusammenarbeit.' },
     { step: '03', title: 'Standort- und Konzeptprüfung', description: 'Gemeinsam prüfen wir Standortoptionen, Marktpotenzial und die Eignung des geplanten Betriebsmodells.' },
-    { step: '04', title: 'Wirtschaftliche Bewertung', description: 'Sie erhalten Einblick in die wesentlichen betriebswirtschaftlichen Rahmenbedingungen und die Struktur des Franchise-Modells.' },
+    { step: '04', title: 'Wirtschaftliche Bewertung', description: 'Sie erhalten Einblick in die wesentlichen betriebswirtschaftlichen Rahmenbedingungen und die Struktur des Store-Modells.' },
     { step: '05', title: 'Vorbereitung & Umsetzung', description: 'Nach finaler Abstimmung begleiten wir die nächsten Schritte bis zur operativen Umsetzung des Standorts.' },
     { step: '06', title: 'Eröffnung', description: 'Der neue Standort startet mit klarer Markenpräsenz und abgestimmter operativer Einführung.' },
   ];
@@ -137,8 +137,8 @@ export function Franchise() {
         </div>
 
         <h1 style={{ fontFamily: 'Georgia,serif', fontSize: 'clamp(38px,7vw,80px)', fontWeight: 400, lineHeight: 1.05, color: '#111', marginBottom: 24, letterSpacing: '-1px' }}>
-          Franchise{' '}
-          <span style={{ color: '#FBC49D' }}>Möglichkeit</span>
+          Mein eigener{' '}
+          <span style={{ color: '#FBC49D' }}>Store</span>
         </h1>
 
         <p style={{ fontFamily: 'Inter,sans-serif', fontSize: 'clamp(15px,2vw,18px)', color: '#6B7280', lineHeight: 1.7, maxWidth: 640, margin: '0 auto 56px' }}>
@@ -210,10 +210,10 @@ export function Franchise() {
               Investitions<span style={{ color: '#FBC49D' }}>übersicht</span>
             </h2>
             <p style={{ fontFamily: 'Inter,sans-serif', fontSize: 15, color: '#6B7280', lineHeight: 1.75, marginBottom: 32 }}>
-              Die genauen wirtschaftlichen Rahmendaten werden im Rahmen des Franchise-Prozesses transparent vorgestellt und individuell nach Standort, Flächengröße und Ausbaukonzept bewertet.
+              Die genauen wirtschaftlichen Rahmendaten werden im Rahmen des Store-Prozesses transparent vorgestellt und individuell nach Standort, Flächengröße und Ausbaukonzept bewertet.
             </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 16, marginBottom: 32 }}>
-              {['Anfangsinvestition', 'Franchise-Gebühr', 'Laufende Lizenzgebühr', 'Marketingbeitrag', 'Wirtschaftlicher Zielhorizont'].map((item) => (
+              {['Anfangsinvestition', 'Store-Gebühr', 'Laufende Lizenzgebühr', 'Marketingbeitrag', 'Wirtschaftlicher Zielhorizont'].map((item) => (
                 <div key={item} style={{ display: 'flex', alignItems: 'flex-start', gap: 12 }}>
                   <CheckCircle style={{ width: 20, height: 20, color: '#FBC49D', flexShrink: 0, marginTop: 2 }} />
                   <div>
@@ -233,7 +233,7 @@ export function Franchise() {
             <div style={{ borderRadius: 24, overflow: 'hidden', boxShadow: '0 20px 60px rgba(0,0,0,0.12)' }}>
               <ImageWithFallback
                 src="https://images.unsplash.com/photo-1725859685127-c723ea1d32a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080"
-                alt="Franchise Möglichkeit"
+                alt="Eigener Store Möglichkeit"
                 className="w-full"
                 style={{ height: 480, objectFit: 'cover', display: 'block' }}
               />
@@ -285,7 +285,7 @@ export function Franchise() {
           FORM SECTION – pink bg, corner imgs
       ═══════════════════════════════════ */}
       <section
-        id="franchise-form"
+        id="store-form"
         style={{ background: '#FBC49D', padding: '80px 24px', position: 'relative', overflow: 'hidden' }}
       >
         {/* Top-right cake image */}
@@ -306,7 +306,7 @@ export function Franchise() {
               <span style={{ color: '#FBC49D' }}>Reise</span>
             </h2>
             <p style={{ fontFamily: 'Inter,sans-serif', fontSize: 16, color: 'rgba(0, 0, 0, 0.8)', lineHeight: 1.6 }}>
-              Füllen Sie das Formular aus und unser Franchise-Team meldet sich innerhalb von 24 Stunden bei Ihnen.
+              Füllen Sie das Formular aus und unser Store-Team meldet sich innerhalb von 24 Stunden bei Ihnen.
             </p>
           </div>
 
@@ -317,7 +317,7 @@ export function Franchise() {
                 <div style={{ fontSize: 48, marginBottom: 16 }}>🎉</div>
                 <h3 style={{ fontFamily: 'Georgia,serif', fontSize: 28, color: '#111', marginBottom: 12 }}>Vielen Dank!</h3>
                 <p style={{ fontFamily: 'Inter,sans-serif', fontSize: 15, color: '#6B7280' }}>
-                  Ihr Franchise-Anfrage wurde erfolgreich übermittelt. Unser Team meldet sich zeitnah bei Ihnen.
+                  Ihre Store-Anfrage wurde erfolgreich übermittelt. Unser Team meldet sich zeitnah bei Ihnen.
                 </p>
               </div>
             ) : (
@@ -398,7 +398,7 @@ export function Franchise() {
                   <label style={labelStyle}>Zusätzliche Informationen</label>
                   <textarea
                     rows={4}
-                    placeholder="Erzählen Sie uns von Ihrem Interesse an einer PUFU-Franchise..."
+                    placeholder="Erzählen Sie uns von Ihrem Interesse an einem eigenen PUFU Store..."
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     style={{ ...inputStyle, resize: 'none', lineHeight: 1.6 }}
@@ -433,7 +433,7 @@ export function Franchise() {
                 </button>
 
                 <p style={{ fontFamily: 'Inter,sans-serif', fontSize: 12, color: '#9CA3AF', textAlign: 'center', marginTop: 16 }}>
-                  Mit dem Absenden dieser Anfrage erklären Sie sich damit einverstanden, von unserem Franchise-Team kontaktiert zu werden.
+                  Mit dem Absenden dieser Anfrage erklären Sie sich damit einverstanden, von unserem Store-Team kontaktiert zu werden.
                 </p>
               </form>
             )}
