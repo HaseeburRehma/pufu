@@ -79,12 +79,12 @@ export function OwnStore() {
     {
       icon: <BookOpen className="w-8 h-8" />,
       title: 'Operatives Unterstützungspotenzial',
-      description: 'Store-Partner profitieren von einem strukturierten Konzeptaufbau, Markenführung und betrieblicher Orientierung.',
+      description: 'Store-Partner profitieren von einem strukturierten Konzeptaufbau, Markenführung and betrieblicher Orientierung.',
     },
     {
       icon: <Target className="w-8 h-8" />,
       title: 'Standortrelevantes Format',
-      description: 'Geeignet für urbane Lagen mit hoher Frequenz und klarer Zielgruppenansprache.',
+      description: 'Geeignet für urbane Lagen mit hoher Frequence und klarer Zielgruppenansprache.',
     },
     {
       icon: <Users className="w-8 h-8" />,
@@ -303,7 +303,7 @@ export function OwnStore() {
           <div style={{ textAlign: 'center', marginBottom: 48 }}>
             <h2 style={{ fontFamily: 'Georgia,serif', fontSize: 'clamp(32px,5vw,60px)', fontWeight: 400, color: '#000', marginBottom: 16, lineHeight: 1.1 }}>
               Jetzt deinen eigenen{' '}
-              <span style={{ color: '#FBC49D' }}>Store eröffnen</span>
+              <span style={{ color: '#fff' }}>Store eröffnen</span>
             </h2>
             <p style={{ fontFamily: 'Inter,sans-serif', fontSize: 16, color: 'rgba(0, 0, 0, 0.8)', lineHeight: 1.6 }}>
               Füllen Sie das Formular aus und unser Store-Team meldet sich innerhalb von 24 Stunden bei Ihnen.
